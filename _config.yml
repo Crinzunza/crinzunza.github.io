@@ -32,7 +32,7 @@ author:
   youtube:
 
 # Appearance
-theme: minimal
+remote_theme: academicpages/academicpages
 logo: "/images/profile.png"
 show_downloads: false
 
@@ -41,9 +41,10 @@ markdown: kramdown
 highlighter: rouge
 
 plugins:
-  - jekyll-feed
+  - jekyll-remote-theme
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-feed
   - jemoji
 
 paginate: 5
