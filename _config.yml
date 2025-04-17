@@ -22,7 +22,7 @@ repository               : "https://crinzunza.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "foto.jpeg"
+  avatar           : "profile.png"
   name             : "Cristian Inzunza"
   bio              : "Postdoctoral researcher at the Center for Mathematical Modeling (CMM)"
   location         : "Concepción, Chile"
@@ -30,9 +30,9 @@ author:
 
   # Academic websites
   #arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=jkOAgcQAAAAJ&hl=es"
  # impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0000-0003-2959-6779"
   #semantic         : # URL
   #pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : "https://www.researchgate.net/profile/Cristian-Inzunza?ev=hdr_xprf"
