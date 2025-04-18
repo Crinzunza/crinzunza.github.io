@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Cristian Inzunza D. – Numerical Analysis & PDEs / crinzunza.github.io"
+title                    : "Cristian's Homepage / crinzunza.github.io"
 title_separator          : "-"
 name                     : &name "Cristian Inzunza D."
 description              : &description "  Postdoctoral researcher in numerical analysis of nonlinear and coupled PDEs. Focused on mixed finite element methods in Banach spaces."
@@ -23,7 +23,7 @@ repository               : "https://crinzunza.github.io"
 author:
   # Biographic information
   avatar           : "foto1.jpeg"
-  name             : "Cristian Inzunza"
+  name             : "Cristian Inzunza D"
   bio              : "Postdoctoral researcher at the Center for Mathematical Modeling (CMM)"
   location         : "Concepción, Chile"
   email            : "crinzunza@ucsc.cl" 
