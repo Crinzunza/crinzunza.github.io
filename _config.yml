@@ -9,7 +9,7 @@
 # Basic Site Settings
 locale                   : "en-US"
 site_theme               : "default"
-title                    : "Cristian's Homepage / crinzunza.github.io"
+title                    : "Cristian's Homepage"
 title_separator          : "-"
 name                     : &name "Cristian Inzunza D."
 description              : &description "  Postdoctoral researcher in numerical analysis of nonlinear and coupled PDEs. Focused on mixed finite element methods in Banach spaces."
