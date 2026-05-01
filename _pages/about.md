@@ -8,7 +8,7 @@ redirect_from:
 ---
 
 <p>
-I am currently a postdoctoral researcher at Universidad Católica de la Santísima Concepción (UCSC), Chile. Since April 2026, I have been carrying out my postdoctoral project funded by Fondecyt de Postdoctorado 2026, entitled <em>Numerical Methods for Nonlinear Poroelasticity and Related Models with Applications in Biomedicine and Engineering</em>, under the supervision of <a href="https://scaucao.github.io/#"> Sergio Caucao</a>.. I am also a member of the Numerical Analysis and Scientific Computing Research Group (GIANuC²).
+I am currently a postdoctoral researcher at Universidad Católica de la Santísima Concepción (UCSC), Chile. Since April 2026, I have been carrying out my postdoctoral project funded by Fondecyt de Postdoctorado 2026, entitled <em>Numerical Methods for Nonlinear Poroelasticity and Related Models with Applications in Biomedicine and Engineering</em>, under the supervision of <a href="https://scaucao.github.io/#"> Sergio Caucao</a>. I am also a member of the Numerical Analysis and Scientific Computing Research Group (GIANuC²).
 </p>
 
 <p>
