@@ -14,7 +14,7 @@ I am currently a postdoctoral researcher at Universidad Católica de la Santísi
 Previously, I was a postdoctoral researcher at the Center for Mathematical Modeling (CMM), Universidad de Chile, from April 2025 to March 2026, where I carried out the project <em>Finite Element Methods for Nonlinear Problems with Biomedical and Engineering Applications</em>, under the supervision of Prof. Sergio Caucao and Prof. Jessika Camaño.
 
 <p>
-I obtained my Ph.D. in Applied Sciences, with a mention in Mathematical Engineering, at the University of Concepción, Chile (2020–2024). Previously, I earned my degree as a Mathematical Civil Engineer at the same institution (2011–2018).
+I obtained my Ph.D. in Applied Sciences, with a mention in Mathematical Engineering, at the University of Concepción, Chile (2020–2024), under the supervision of Professor <a href="https://www.ci2ma.udec.cl/ggatica/">Gabriel N. Gatica</a>. Previously, I earned my degree as a Mathematical Civil Engineer at the same institution (2011–2018).
 </p>
 
 <p>
