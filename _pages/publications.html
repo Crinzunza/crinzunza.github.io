@@ -6,7 +6,8 @@ author_profile: true
 ---
 
 <h2>Submitted / Under review</h2>
-<ul>
+
+<ol>
   <li>
     <strong>Mixed finite element methods for a heat-assisted model of sedimentation</strong><br>
     J. Careaga, C. Inzunza<br>
@@ -25,13 +26,15 @@ author_profile: true
     <strong>A five-field mixed formulation for the fully dynamic Biot–Brinkman model</strong><br>
     J. Camaño, S. Caucao, C. Inzunza<br>
     <em>Preprint <a href="https://www.ci2ma.udec.cl/publicaciones/prepublicaciones/index.php">2025-28</a>,
-    Centro de Investigación en Ingeniería Matemática (CI²MA), Universidad de Concepción</em>, 2025
+    Centro de Investigación en Ingeniería Matemática (CI²MA),
+    Universidad de Concepción</em>, 2025
   </li>
-</ul>
+</ol>
 
 
 <h2>Published / Accepted</h2>
-<ul>
+
+<ol>
   <li>
     <strong>A priori and a posteriori error analysis of a mixed FEM for stationary convective Brinkman–Forchheimer flows with variable porosity</strong><br>
     S. Caucao, G. N. Gatica, L. F. Gatica, C. Inzunza<br>
@@ -41,7 +44,7 @@ author_profile: true
   <li>
     <strong>Primal-mixed finite element methods for the coupled Biot and Poisson–Nernst–Planck equations</strong><br>
     G. N. Gatica, C. Inzunza, R. Ruiz-Baier<br>
-    <em>Computers & Mathematics with Applications, 186, 53–83</em>, 2025<br>
+    <em>Computers &amp; Mathematics with Applications, 186, 53–83</em>, 2025<br>
     <a href="https://doi.org/10.1016/j.camwa.2025.03.004">https://doi.org/10.1016/j.camwa.2025.03.004</a>
   </li>
 
@@ -55,7 +58,7 @@ author_profile: true
   <li>
     <strong>A Banach spaces-based fully-mixed finite element method for the stationary chemotaxis-Navier-Stokes problem</strong><br>
     S. Caucao, E. Colmenares, G. N. Gatica, C. Inzunza<br>
-    <em>Computers & Mathematics with Applications, 145, 65–89</em>, 2023<br>
+    <em>Computers &amp; Mathematics with Applications, 145, 65–89</em>, 2023<br>
     <a href="https://doi.org/10.1016/j.camwa.2023.06.006">https://doi.org/10.1016/j.camwa.2023.06.006</a>
   </li>
 
@@ -83,7 +86,7 @@ author_profile: true
   <li>
     <strong>On the well-posedness of Banach spaces-based mixed formulations for the nearly incompressible Navier-Lamé and Stokes equations</strong><br>
     G. N. Gatica, C. Inzunza<br>
-    <em>Computers & Mathematics with Applications, 102, 87–94</em>, 2021<br>
+    <em>Computers &amp; Mathematics with Applications, 102, 87–94</em>, 2021<br>
     <a href="https://doi.org/10.1016/j.camwa.2021.10.004">https://doi.org/10.1016/j.camwa.2021.10.004</a>
   </li>
 
@@ -93,18 +96,21 @@ author_profile: true
     <em>Calcolo, 57</em>, 2020<br>
     <a href="https://doi.org/10.1007/s10092-020-0355-y">https://doi.org/10.1007/s10092-020-0355-y</a>
   </li>
-</ul>
+</ol>
 
 
 {% if site.author.googlescholar %}
-  <div class="wordwrap">You can also find my articles on <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.</div>
+  <div class="wordwrap">
+    You can also find my articles on
+    <a href="{{site.author.googlescholar}}">my Google Scholar profile</a>.
+  </div>
 {% endif %}
 
 {% include base_path %}
 
 <!-- New style rendering if publication categories are defined -->
 {% if site.publication_category %}
-  {% for category in site.publication_category  %}
+  {% for category in site.publication_category %}
     {% assign title_shown = false %}
     {% for post in site.publications reversed %}
       {% if post.category != category[0] %}
@@ -122,3 +128,4 @@ author_profile: true
     {% include archive-single.html %}
   {% endfor %}
 {% endif %}
+
