@@ -58,6 +58,11 @@
 
 - id: transport
   gallery:
+    - src: /assets/img/papers/sedimentation-kynch.jpg
+      width: 1364
+      height: 420
+      en: "Batch settling in a heated vessel (batch Kynch test, Example 2): solids concentration at four times, with the cold wall on the left and the hot wall on the right. From J. Careaga and C. Inzunza, <em>Mixed finite element methods for a heat-assisted model of sedimentation</em>, arXiv:2610.28903."
+      es: "Sedimentación en un recipiente calefaccionado (test de Kynch por lotes, Ejemplo 2): concentración de sólidos en cuatro instantes, con la pared fría a la izquierda y la caliente a la derecha. De J. Careaga y C. Inzunza, <em>Mixed finite element methods for a heat-assisted model of sedimentation</em>, arXiv:2610.28903."
     - src: /assets/img/papers/bpnp-adaptive-charge.jpg
       width: 1100
       height: 630
