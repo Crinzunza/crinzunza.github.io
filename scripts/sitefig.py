@@ -73,4 +73,9 @@ text{font-family:'STIX Two Text','Times New Roman',serif;font-size:15px;fill:var
 </style>"""
 
 def standalone(path, width, height, body, grid=False):
-    open(path, 'w').write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d"%s>' % (round(width), round(height), ' class="grid"' if grid else '') + STYLE + body + '</svg>')
+    """Writes path (light palette) and path-dark.svg (dark palette)."""
+    import re
+    head = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 %d %d"%s>' % (round(width), round(height), ' class="grid"' if grid else '')
+    m = re.search(r'svg\{(--b0:#E2BE72.*?)\}\n@media \(prefers-color-scheme: dark\)\{svg\{(.*?)\}\}\n', STYLE, re.S)
+    for out, pal in ((path, m.group(1)), (path.replace('.svg', '-dark.svg'), m.group(2))):
+        open(out, 'w').write(head + STYLE.replace(m.group(0), 'svg{%s}\n' % pal) + body + '</svg>')

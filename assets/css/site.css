@@ -4,6 +4,27 @@
    counterpoint taken from the field colouring of the mesh figures.
    ------------------------------------------------------------------ */
 :root {
+  --paper: #131C23;
+  --paper-2: #1A252D;
+  --ink: #E1E8EA;
+  --muted: #9BABB1;
+  --rule: #2B3A43;
+  --accent: #8CC2D6;
+  --ochre: #D8AE60;
+  --mesh-line: #131C23;
+  --b0: #8C6A2A; --b1: #6B5C3C; --b2: #384447; --b3: #2D474C;
+  --b4: #2E5862; --b5: #3D7384; --b6: #5C95A8;
+  --s0: #1E2B33; --s1: #23363F; --s2: #2A4550; --s3: #315A66;
+  --s4: #3B7182; --s5: #5290A3; --s6: #86BED0;
+
+  --serif: "STIX Two Text", "STIX Two", "Times New Roman", serif;
+  --sans: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
+  --wrap: 72rem;
+  --gutter: clamp(1rem, 4vw, 2.5rem);
+  --measure: 40rem;
+  color-scheme: dark;
+}
+:root[data-theme="light"] {
   --paper: #F6F8F7;
   --paper-2: #EDF1EF;
   --ink: #1D2B34;
@@ -19,27 +40,7 @@
   --s0: #E9EEEA; --s1: #D2E0DB; --s2: #B2CDC8; --s3: #8DB4B4;
   --s4: #6A9BA6; --s5: #44788F; --s6: #24506A;
 
-  --serif: "STIX Two Text", "STIX Two", "Times New Roman", serif;
-  --sans: "Schibsted Grotesk", "Helvetica Neue", Arial, sans-serif;
-  --wrap: 72rem;
-  --gutter: clamp(1rem, 4vw, 2.5rem);
-  --measure: 40rem;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    --paper: #131C23;
-    --paper-2: #1A252D;
-    --ink: #E1E8EA;
-    --muted: #9BABB1;
-    --rule: #2B3A43;
-    --accent: #8CC2D6;
-    --ochre: #D8AE60;
-    --mesh-line: #131C23;
-    --b0: #8C6A2A; --b1: #6B5C3C; --b2: #384447; --b3: #2D474C;
-    --b4: #2E5862; --b5: #3D7384; --b6: #5C95A8;
-    --s0: #1E2B33; --s1: #23363F; --s2: #2A4550; --s3: #315A66;
-    --s4: #3B7182; --s5: #5290A3; --s6: #86BED0;
-  }
+  color-scheme: light;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
@@ -75,13 +76,15 @@ p { margin: 0 0 1rem; }
 .site-nav a:hover, .lang-switch:hover { color: var(--ink); }
 .site-nav a[aria-current="page"] { color: var(--ink); box-shadow: inset 0 -2px 0 var(--ochre); }
 .lang-switch { border-left: 1px solid var(--rule); padding-left: 1.25rem; white-space: nowrap; }
+.header-tools { display: flex; align-items: center; gap: 1.25rem; }
 
 @media (max-width: 860px) {
   .header-row { flex-wrap: wrap; gap: .25rem 1rem; padding-block: .75rem; }
   .site-nav { order: 3; width: 100%; margin-left: 0; }
   .site-nav ul { gap: .1rem 1rem; }
   .site-nav li { white-space: nowrap; }
-  .lang-switch { margin-left: auto; border-left: 0; padding-left: 0; }
+  .lang-switch { border-left: 0; padding-left: 0; }
+  .header-tools { margin-left: auto; gap: 1rem; }
 }
 
 /* ---------- mesh figures ---------- */
@@ -240,8 +243,13 @@ p { margin: 0 0 1rem; }
 .footer-links li { margin-bottom: .3rem; }
 @media (max-width: 760px) { .footer-grid { grid-template-columns: 1fr; gap: 1.25rem; } }
 
+/* theme switch */
+.theme-switch { font: inherit; font-family: var(--sans); font-size: .9rem; color: var(--muted); background: none; border: 0; padding: .3rem 0; cursor: pointer; white-space: nowrap; }
+.theme-switch:hover { color: var(--ink); }
+:root[data-theme="light"] .only-dark, :root:not([data-theme="light"]) .only-light { display: none; }
+
 @media print {
-  .site-header nav, .lang-switch, .filter, .hero-figure { display: none; }
+  .site-header nav, .header-tools, .filter, .hero-figure { display: none; }
   body { background: #fff; color: #000; }
 }
 

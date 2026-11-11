@@ -32,6 +32,8 @@ en:
   contact: "Contact"
   fig: "Fig."
   photo_alt: "Cristian Inzunza by the sea"
+  theme_light: "Light mode"
+  theme_dark: "Dark mode"
   menu: "Menu"
   updated: "Last updated"
 es:
@@ -66,5 +68,7 @@ es:
   contact: "Contacto"
   fig: "Fig."
   photo_alt: "Cristian Inzunza frente al mar"
+  theme_light: "Modo claro"
+  theme_dark: "Modo oscuro"
   menu: "Menú"
   updated: "Última actualización"
