@@ -20,6 +20,7 @@
   status: review
   topics: [poro, transport, apost]
   fondecyt: true
+  doi: "10.13140/RG.2.2.11969.31844"
 
 - title: "Mixed finite element methods for a heat-assisted model of sedimentation"
   authors: "J. Careaga, C. Inzunza"
