@@ -1,0 +1,11 @@
+{%- assign t = site.data.i18n[include.lang] -%}
+<section class="hero">
+  <figure class="hero-figure">
+    {% include hero-mesh.svg %}
+    <figcaption class="wrap"><span class="fig-num">{{ t.fig }} 1.</span> {{ t.hero_caption }}</figcaption>
+  </figure>
+  <div class="wrap hero-text">
+    <h1>{{ site.author.name }}</h1>
+    <p class="lede">{{ include.lede }}</p>
+  </div>
+</section>

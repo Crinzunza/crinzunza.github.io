@@ -1,0 +1,47 @@
+{%- assign L = include.lang -%}
+{%- assign t = site.data.i18n[L] -%}
+{%- assign outputs = site.data.publications | where: "fondecyt", true -%}
+{%- if L == "es" -%}
+  {%- assign k_prog = "Programa" -%}{%- assign k_no = "Proyecto" -%}{%- assign k_pi = "Investigador responsable" -%}
+  {%- assign k_sp = "Investigador patrocinante" -%}{%- assign k_start = "Inicio" -%}{%- assign k_title = "Título" -%}
+  {%- assign v_prog = "ANID, Fondecyt de Postdoctorado 2026" -%}{%- assign v_start = "Abril de 2026" -%}
+  {%- assign h_aims = "Objetivos" -%}{%- assign h_lines = "Líneas involucradas" -%}{%- assign h_out = "Productos" -%}
+  {%- assign h_ack = "Agradecimiento sugerido" -%}
+{%- else -%}
+  {%- assign k_prog = "Programme" -%}{%- assign k_no = "Project" -%}{%- assign k_pi = "Principal investigator" -%}
+  {%- assign k_sp = "Sponsoring researcher" -%}{%- assign k_start = "Start" -%}{%- assign k_title = "Title" -%}
+  {%- assign v_prog = "ANID, Fondecyt Postdoctoral Programme 2026" -%}{%- assign v_start = "April 2026" -%}
+  {%- assign h_aims = "Aims" -%}{%- assign h_lines = "Research lines involved" -%}{%- assign h_out = "Outputs" -%}
+  {%- assign h_ack = "Suggested acknowledgement" -%}
+{%- endif -%}
+<div class="wrap page">
+  <header class="page-head">
+    <h1>{{ t.nav.fondecyt }}</h1>
+    <p class="lede"><em>Numerical Methods for Nonlinear Poroelasticity and Related Models with Applications in Biomedicine and Engineering</em></p>
+  </header>
+
+  <dl class="facts">
+    <dt>{{ k_prog }}</dt><dd>{{ v_prog }}</dd>
+    <dt>{{ k_no }}</dt><dd>N.º 3260398</dd>
+    <dt>{{ k_pi }}</dt><dd>Cristian Inzunza</dd>
+    <dt>{{ k_sp }}</dt><dd><a href="https://scaucao.github.io/">Sergio Caucao</a></dd>
+    <dt>{{ k_start }}</dt><dd>{{ v_start }}</dd>
+  </dl>
+
+  <section class="prose" aria-labelledby="aims-h">
+    <h2 id="aims-h">{{ h_aims }}</h2>
+    {{ include.aims }}
+  </section>
+
+  <section aria-labelledby="out-h">
+    <h2 id="out-h">{{ h_out }} <span class="count">{{ outputs.size }}</span></h2>
+    <ol class="pubs" reversed>
+      {%- for p in outputs %}{% include pub-item.html pub=p lang=L %}{% endfor %}
+    </ol>
+  </section>
+
+  <section class="prose" aria-labelledby="ack-h">
+    <h2 id="ack-h">{{ h_ack }}</h2>
+    <blockquote class="ack">{{ include.ack }}</blockquote>
+  </section>
+</div>

@@ -1,0 +1,21 @@
+{%- comment -%} Params: lang, limit (optional) {%- endcomment -%}
+{%- assign _limit = include.limit | default: 999 -%}
+{%- assign _pref = "" -%}{%- if include.lang == "es" -%}{%- assign _pref = "/es" -%}{%- endif -%}
+<ul class="news">
+  {%- for n in site.data.news limit: _limit %}
+  <li>
+    <span class="news-date">{% include date.html d=n.date lang=include.lang %}</span>
+    <p>
+      {%- if n.link -%}
+        {%- assign _first = n.link | slice: 0 -%}
+        {%- if _first == "/" -%}
+          {%- assign _key = n.link | remove: "/" -%}
+          <a href="{{ site.data.i18n[include.lang].pages[_key] | relative_url }}">{{ n[include.lang] }}</a>
+        {%- else -%}
+          <a href="{{ n.link }}">{{ n[include.lang] }}</a>
+        {%- endif -%}
+      {%- else -%}{{ n[include.lang] }}{%- endif -%}
+    </p>
+  </li>
+  {%- endfor %}
+</ul>

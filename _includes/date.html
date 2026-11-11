@@ -1,0 +1,8 @@
+{%- comment -%} Formats "YYYY-MM" or "YYYY". Params: d, lang {%- endcomment -%}
+{%- assign _parts = include.d | append: "" | split: "-" -%}
+{%- if _parts.size > 1 -%}
+{%- assign _m = _parts[1] | plus: 0 | minus: 1 -%}
+<time datetime="{{ include.d }}">{{ site.data.i18n[include.lang].months[_m] }} {{ _parts[0] }}</time>
+{%- else -%}
+<time datetime="{{ _parts[0] }}">{{ _parts[0] }}</time>
+{%- endif -%}

@@ -1,0 +1,72 @@
+# Interface strings and page URLs per language.
+# `pages` maps a page `ref` to its URL in each language (used by the menu and the language switch).
+en:
+  name: English
+  switch_label: "Español"
+  pages:
+    home: /
+    research: /research/
+    publications: /publications/
+    talks: /talks/
+    teaching: /teaching/
+    fondecyt: /fondecyt/
+    news: /news/
+  nav:
+    research: Research
+    publications: Publications
+    talks: Talks
+    teaching: Teaching
+    fondecyt: Fondecyt project
+    news: News
+    cv: CV
+  months: [Jan, Feb, Mar, Apr, May, Jun, Jul, Aug, Sep, Oct, Nov, Dec]
+  skip: "Skip to content"
+  all_news: "All news"
+  all_pubs: "All publications"
+  research_more: "Research lines and related work"
+  under_review: "Submitted and preprints"
+  published: "Journal articles"
+  filter_label: "Show publications on"
+  filter_all: "All topics"
+  related: "Related publications"
+  contact: "Contact"
+  fig: "Fig."
+  hero_caption: "Adaptive refinement of a triangulation near an interface, coloured by a scalar field. Each visit draws three refinement levels."
+  photo_alt: "Cristian Inzunza by the sea"
+  menu: "Menu"
+  updated: "Last updated"
+es:
+  name: Español
+  switch_label: "English"
+  pages:
+    home: /es/
+    research: /es/investigacion/
+    publications: /es/publicaciones/
+    talks: /es/charlas/
+    teaching: /es/docencia/
+    fondecyt: /es/fondecyt/
+    news: /es/noticias/
+  nav:
+    research: Investigación
+    publications: Publicaciones
+    talks: Charlas
+    teaching: Docencia
+    fondecyt: Proyecto Fondecyt
+    news: Noticias
+    cv: CV
+  months: [ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic]
+  skip: "Ir al contenido"
+  all_news: "Todas las noticias"
+  all_pubs: "Todas las publicaciones"
+  research_more: "Líneas de investigación y trabajos relacionados"
+  under_review: "Enviados y preprints"
+  published: "Artículos en revistas"
+  filter_label: "Mostrar publicaciones sobre"
+  filter_all: "Todos los temas"
+  related: "Publicaciones relacionadas"
+  contact: "Contacto"
+  fig: "Fig."
+  hero_caption: "Refinamiento adaptativo de una triangulación cerca de una interfaz, coloreada por un campo escalar. Cada visita dibuja tres niveles de refinamiento."
+  photo_alt: "Cristian Inzunza frente al mar"
+  menu: "Menú"
+  updated: "Última actualización"

@@ -1,0 +1,7 @@
+{%- assign t = site.data.i18n[include.lang] -%}
+<div class="wrap page">
+  <header class="page-head">
+    <h1>{{ t.nav.news }}</h1>
+  </header>
+  {% include news-list.html lang=include.lang %}
+</div>

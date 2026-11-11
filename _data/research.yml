@@ -1,0 +1,81 @@
+# Research lines. `id` links publications (topics) to each line.
+# `figure` is an SVG in _includes/; replace with an image path in `image:` to use a real simulation figure.
+
+- id: poro
+  gallery:
+  - src: /assets/img/figs/bpnp-polarization.svg
+    width: 618
+    height: 220
+    en: 'Ionic polarization in a charged porous medium for an applied voltage V = 0.9 (Example 3 of C. Inzunza, <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>, submitted): electric potential, displacement magnitude and Darcy-flux magnitude. Recomputed for this page in primal form with the data of the example; the circle marks the charged region.'
+    es: 'Polarización iónica en un medio poroso cargado para un voltaje aplicado V = 0.9 (Ejemplo 3 de C. Inzunza, <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>, enviado): potencial eléctrico, magnitud del desplazamiento y magnitud del flujo de Darcy. Recalculado para esta página en forma primal con los datos del ejemplo; el círculo marca la región cargada.'
+  - src: /assets/img/figs/fivefield-exact.svg
+    width: 666
+    height: 180
+    en: 'Exact solution of Example 1 in J. Camaño, S. Caucao and C. Inzunza, <em>A five-field mixed formulation for the fully dynamic Biot–Brinkman model</em> (ESAIM: M2AN, accepted): shear stress, fluid-velocity and displacement magnitudes, and pore pressure at t = 0.'
+    es: 'Solución exacta del Ejemplo 1 de J. Camaño, S. Caucao y C. Inzunza, <em>A five-field mixed formulation for the fully dynamic Biot–Brinkman model</em> (ESAIM: M2AN, aceptado): tensión de corte, magnitudes de la velocidad del fluido y del desplazamiento, y presión de poro en t = 0.'
+  figure: thumb-poro.svg
+  en:
+    title: Poroelasticity and multiphysics coupling
+    short: Biot's consolidation model coupled with heat transfer, electrochemical transport and fluid inertia.
+    text: I study Biot's poroelasticity model and its couplings with heat transfer, Poisson–Nernst–Planck electrochemical transport, and Brinkman and Forchheimer flow. The formulations use the total pressure and pseudostress-type unknowns, and are designed to remain stable in the nearly incompressible limit, where standard discretisations suffer from locking. Applications include deformable porous media in engineering and fluid flow in biological tissues.
+    caption: 'Manufactured solution of Example 1 in Careaga, Gatica, Inzunza and Ruiz-Baier (IMA J. Numer. Anal., 2025): fluid pressure on the deformed configuration, with the undeformed domain dashed.'
+  es:
+    title: Poroelasticidad y acoplamientos multifísicos
+    short: El modelo de consolidación de Biot acoplado con transferencia de calor, transporte electroquímico e inercia del fluido.
+    text: Estudio el modelo de poroelasticidad de Biot y sus acoplamientos con transferencia de calor, transporte electroquímico de Poisson–Nernst–Planck y flujo de Brinkman y Forchheimer. Las formulaciones utilizan la presión total e incógnitas de tipo pseudotensión, y están diseñadas para mantenerse estables en el límite casi incompresible, donde las discretizaciones estándar sufren bloqueo (locking). Las aplicaciones incluyen medios porosos deformables en ingeniería y el flujo de fluidos en tejidos biológicos.
+    caption: 'Solución manufacturada del Ejemplo 1 de Careaga, Gatica, Inzunza y Ruiz-Baier (IMA J. Numer. Anal., 2025): presión del fluido sobre la configuración deformada, con el dominio sin deformar en línea discontinua.'
+- id: flow
+  figure: thumb-flow.svg
+  en:
+    title: Flow in porous media and incompressible fluids
+    short: Mixed methods for Stokes, Navier–Stokes, Brinkman and Brinkman–Forchheimer flows.
+    text: Mixed finite element methods for Stokes, Navier–Stokes, Brinkman and Brinkman–Forchheimer equations, including convective terms, variable porosity and nearly incompressible elasticity. The analysis relies on Banach-space formulations in which the natural integrability of the nonlinear terms determines the functional setting.
+    caption: Velocity magnitude near the cavity in the channel of Example 4 in Caucao, Gatica, Gatica and Inzunza (J. Comput. Appl. Math., 2027), on the finest adapted mesh, recomputed for this page. The flow accelerates above the cavity and bends away from the low-porosity region.
+  es:
+    title: Flujo en medios porosos y fluidos incompresibles
+    short: Métodos mixtos para flujos de Stokes, Navier–Stokes, Brinkman y Brinkman–Forchheimer.
+    text: Métodos de elementos finitos mixtos para las ecuaciones de Stokes, Navier–Stokes, Brinkman y Brinkman–Forchheimer, incluyendo términos convectivos, porosidad variable y elasticidad casi incompresible. El análisis se apoya en formulaciones en espacios de Banach, donde la integrabilidad natural de los términos no lineales determina el marco funcional.
+    caption: Magnitud de la velocidad cerca de la cavidad en el canal del Ejemplo 4 de Caucao, Gatica, Gatica e Inzunza (J. Comput. Appl. Math., 2027), en la malla adaptada más fina, recalculada para esta página. El flujo se acelera sobre la cavidad y se desvía de la región de baja porosidad.
+  gallery:
+  - src: /assets/img/figs/spe10-layer70.svg
+    narrow: true
+    width: 414
+    height: 378
+    en: 'Layer 70 of the SPE10 benchmark, the heterogeneous medium of Example 2 in J. Camaño, S. Caucao and C. Inzunza, <em>A pseudostress-based fully mixed formulation for the unsteady Biot–Brinkman model</em> (GIANuC² preprint, 2026): permeability on the 60 × 220 grid, and the magnitude of a steady Darcy velocity for a unit pressure drop from left to right, computed here with a two-point flux scheme.'
+    es: 'Capa 70 del benchmark SPE10, el medio heterogéneo del Ejemplo 2 de J. Camaño, S. Caucao y C. Inzunza, <em>A pseudostress-based fully mixed formulation for the unsteady Biot–Brinkman model</em> (preprint GIANuC², 2026): permeabilidad en la grilla de 60 × 220 y magnitud de una velocidad de Darcy estacionaria para una caída unitaria de presión de izquierda a derecha, calculada aquí con un esquema de flujo de dos puntos.'
+- id: transport
+  gallery:
+  - src: /assets/img/figs/kynch-batch.svg
+    width: 614
+    height: 170
+    en: 'Batch settling in the vessel of Example 2 in J. Careaga and C. Inzunza, <em>Mixed finite element methods for a heat-assisted model of sedimentation</em> (arXiv:2610.28903): solids volume fraction at four times from the initial value 0.3. Computed here for the solids equation alone, with the batch flux and diffusion functions of the paper and without the flow and heat coupling.'
+    es: 'Sedimentación por lotes en el recipiente del Ejemplo 2 de J. Careaga y C. Inzunza, <em>Mixed finite element methods for a heat-assisted model of sedimentation</em> (arXiv:2610.28903): fracción volumétrica de sólidos en cuatro instantes a partir del valor inicial 0.3. Calculado aquí solo para la ecuación de los sólidos, con las funciones de flujo y difusión del artículo y sin el acoplamiento con el flujo y el calor.'
+  figure: thumb-transport.svg
+  en:
+    title: Transport, diffusion and their coupling with mechanics
+    short: Stress-assisted diffusion, chemotaxis–fluid interaction, Boussinesq flows and sedimentation.
+    text: 'Coupled problems in which a concentration or temperature is transported by a flow or driven by mechanical stress: stress-assisted diffusion, chemotaxis–Navier–Stokes, Boussinesq-type models, flow–transport systems and heat-assisted sedimentation. Well-posedness is typically obtained through fixed-point arguments combined with the theory of mixed and monotone problems.'
+    caption: 'Initial cell density of Example 3 in Caucao, Colmenares, Gatica and Inzunza (Comput. Math. Appl., 2023): three clusters near the top of the domain, with level lines of the chemical signal.'
+  es:
+    title: Transporte, difusión y su acoplamiento con la mecánica
+    short: Difusión asistida por tensiones, interacción quimiotaxis–fluido, flujos de Boussinesq y sedimentación.
+    text: 'Problemas acoplados en que una concentración o una temperatura es transportada por un flujo o impulsada por tensiones mecánicas: difusión asistida por tensiones, quimiotaxis–Navier–Stokes, modelos de tipo Boussinesq, sistemas de flujo–transporte y sedimentación asistida por calor. El buen planteamiento se obtiene usualmente mediante argumentos de punto fijo combinados con la teoría de problemas mixtos y monótonos.'
+    caption: 'Densidad celular inicial del Ejemplo 3 de Caucao, Colmenares, Gatica e Inzunza (Comput. Math. Appl., 2023): tres cúmulos cerca del borde superior, con curvas de nivel de la señal química.'
+- id: apost
+  gallery:
+  - src: /assets/img/figs/bpnp-star.svg
+    width: 700
+    height: 360
+    en: 'Internal layer on a three-quarter star (Example 2 of <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>): exact charge difference and electric-displacement magnitude on a mesh refined towards the layer along y = −x.'
+    es: 'Capa interna en una estrella de tres cuartos (Ejemplo 2 de <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>): diferencia de carga exacta y magnitud del desplazamiento eléctrico en una malla refinada hacia la capa a lo largo de y = −x.'
+  figure: thumb-adapt.svg
+  en:
+    title: A posteriori error analysis and adaptivity
+    short: Reliable and efficient residual estimators for mixed methods in Banach spaces.
+    text: Residual-based a posteriori error estimators for fully-mixed and mixed-primal methods, with proofs of reliability and efficiency, and their use to drive adaptive mesh refinement in problems with singularities or sharp layers.
+    caption: Porosity of the same channel on the finest mesh of the adaptive sequence. The refinement follows the cavity corners and the two low-porosity regions.
+  es:
+    title: Análisis de error a posteriori y adaptatividad
+    short: Estimadores residuales confiables y eficientes para métodos mixtos en espacios de Banach.
+    text: Estimadores de error a posteriori de tipo residual para métodos totalmente mixtos y primal-mixtos, con demostraciones de confiabilidad y eficiencia, y su uso para guiar el refinamiento adaptativo de mallas en problemas con singularidades o capas abruptas.
+    caption: Porosidad del mismo canal en la malla más fina de la secuencia adaptativa. El refinamiento sigue las esquinas de la cavidad y las dos regiones de baja porosidad.

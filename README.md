@@ -1,89 +1,67 @@
-# Academic Pages
-**Academic Pages is a GitHub Pages template for personal and professional portfolio-oriented websites.**
+# crinzunza.github.io
 
-![Academic Pages template example](images/homepage.png "Academic Pages template example")
+Personal academic website of Cristian Inzunza, built with plain Jekyll (no theme) and served by GitHub Pages. English pages live at the root, Spanish pages under `/es/`.
 
-# Getting Started
+## Where to edit
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Click the "Use this template" button in the top right.
-1. On the "New repository" page, enter your repository name as "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and add your content.
-1. Upload any files (like PDFs, .zip files, etc.) to the `files/` directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+| To change | Edit |
+|---|---|
+| Publications (both languages, home page, research and Fondecyt pages) | `_data/publications.yml` |
+| News | `_data/news.yml` |
+| Talks | `_data/talks.yml` |
+| Teaching | `_data/teaching.yml` |
+| Research lines (texts, captions, figures) | `_data/research.yml` |
+| Biography | `index.html` (EN) and `es/index.html` (ES) |
+| Fondecyt project text | `fondecyt.html` and `es/fondecyt.html` |
+| Name, email, affiliation, profile links | `_config.yml` |
+| Menu labels and interface strings | `_data/i18n.yml` |
+| CV | edit `cv/cv.tex`, compile it with `pdflatex`, and copy `cv/cv.pdf` to `files/cv.pdf` |
+| Colours and typography | `assets/css/site.css` (tokens at the top) |
 
-See more info at https://academicpages.github.io/
+### Adding a publication
 
-## Running locally
+Add an entry at the top of `_data/publications.yml`:
 
-When you are initially working on your website, it is very useful to be able to preview the changes locally before pushing them to GitHub. To work locally you will need to:
-
-1. Clone the repository and made updates as detailed above.
-1. Make sure you have ruby-dev, bundler, and nodejs installed
-    
-    On most Linux distribution and [Windows Subsystem Linux](https://learn.microsoft.com/en-us/windows/wsl/about) the command is:
-    ```bash
-    sudo apt install ruby-dev ruby-bundler nodejs
-    ```
-    If you see error `Unable to locate package ruby-bundler`, `Unable to locate package nodejs `, run the following:
-    ```bash
-    sudo apt update && sudo apt upgrade -y
-    ```
-    then try run `sudo apt install ruby-dev ruby-bundler nodejs` again.
-
-    On MacOS the commands are:
-    ```bash
-    brew install ruby
-    brew install node
-    gem install bundler
-    ```
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-
-    If you see file permission error like `Fetching bundler-2.6.3.gem ERROR:  While executing gem (Gem::FilePermissionError) You don't have write permissions for the /var/lib/gems/3.2.0 directory.` or `Bundler::PermissionError: There was an error while trying to write to /usr/local/bin.`
-    Install Gems Locally (Recommended):
-    ```bash
-    bundle config set --local path 'vendor/bundle'
-    ```
-    then try run `bundle install` again. If succeeded, you should see a folder called `vendor` and open `.gitignore` then add `vendor` inside it.
-
-1. Run `jekyll serve -l -H localhost` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
-    You may also try `bundle exec jekyll serve -l -H localhost` to ensure jekyll to use specific dependencies on your own local machine.
-
-If you are running on Linux it may be necessary to install some additional dependencies prior to being able to run locally: `sudo apt install build-essential gcc make`
-
-## Using Docker
-
-Working from a different OS, or just want to avoid installing dependencies? You can use the provided `Dockerfile` to build a container that will run the site for you if you have [Docker](https://www.docker.com/) installed.
-
-You can build and execute the container by running the following command in the repository:
-
-```bash
-docker compose up
+```yaml
+- title: "..."
+  authors: "A. Author, C. Inzunza"
+  venue: "Journal name, volume, pages"
+  year: 2027
+  status: published        # or: review
+  topics: [poro, apost]    # ids from _data/research.yml
+  doi: "10.xxxx/xxxxx"     # optional; also arxiv, preprint, code
+  fondecyt: true           # optional; lists it on the Fondecyt page
 ```
 
-You should now be able to access the website from `localhost:4000`.
+When a preprint is accepted, change `status` to `published` and add the `doi`.
 
-# Maintenance
+### Using a real simulation figure
 
-Bug reports and feature requests to the template should be [submitted via GitHub](https://github.com/academicpages/academicpages.github.io/issues/new/choose). For questions concerning how to style the template, please feel free to start a [new discussion on GitHub](https://github.com/academicpages/academicpages.github.io/discussions).
+Put the image in `assets/img/` and add `image: /assets/img/name.png` to the research line in `_data/research.yml`. It replaces the generated mesh drawing.
 
-This repository was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License (see LICENSE.md). It is currently being maintained by [Robert Zupko](https://github.com/rjzupkoii) and additional maintainers would be welcomed.
+### Figures
 
-## Bugfixes and enhancements
+`_includes/hero-mesh.svg` is an adaptive refinement near an interface, generated by `scripts/hero_mesh.py`. The other mesh figures in `_includes/*.svg` reproduce numerical examples from the CI²MA preprints:
 
-If you have bugfixes and enhancements that you would like to submit as a pull request, you will need to [fork](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo) this repository as opposed to using it as a template. This will also allow you to [synchronize your copy](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/syncing-a-fork) of template to your fork as well.
+- `thumb-flow.svg`, `thumb-adapt.svg`: channel with a cavity and low-porosity regions (Example 4, pp26-12), recomputed with `scripts/channel.py` (scikit-fem, Taylor–Hood, adaptive refinement).
+- `thumb-poro.svg`: manufactured solution of Example 1, pp24-02.
+- `thumb-transport.svg`: initial data of Example 3, pp22-16.
 
-Unfortunately, one logistical issue with a template theme like Academic Pages that makes it a little tricky to get bug fixes and updates to the core theme. If you use this template and customize it, you will probably get merge conflicts if you attempt to synchronize. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch.
+Figures in `assets/img/figs/` recreate examples of the recent manuscripts in the same style (self-contained SVG with light and dark palettes):
 
----
-<div align="center">
-    
-![pages-build-deployment](https://github.com/academicpages/academicpages.github.io/actions/workflows/pages/pages-build-deployment/badge.svg)
-[![GitHub contributors](https://img.shields.io/github/contributors/academicpages/academicpages.github.io.svg)](https://github.com/academicpages/academicpages.github.io/graphs/contributors)
-[![GitHub release](https://img.shields.io/github/v/release/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/releases/latest)
-[![GitHub license](https://img.shields.io/github/license/academicpages/academicpages.github.io?color=blue)](https://github.com/academicpages/academicpages.github.io/blob/master/LICENSE)
+- `bpnp-star.svg`: exact fields of Example 2, Biot–Poisson–Nernst–Planck manuscript (`scripts/fig_star.py`).
+- `bpnp-polarization.svg`: Example 3 of the same manuscript, recomputed in primal form (`scripts/fig_polar.py`).
+- `fivefield-exact.svg`: exact solution of Example 1, five-field Biot–Brinkman (`scripts/fig_fivefield.py`).
+- `spe10-layer70.svg`: SPE10 layer 70 (data from the OPM `opm-data` repository) and a steady Darcy velocity (`scripts/fig_spe10.py`).
+- `kynch-batch.svg`: batch settling of Example 2, arXiv:2610.28903, solids equation only (`scripts/fig_kynch.py`).
 
-[![GitHub stars](https://img.shields.io/github/stars/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io)
-[![GitHub forks](https://img.shields.io/github/forks/academicpages/academicpages.github.io)](https://github.com/academicpages/academicpages.github.io/fork)
-</div>
+To regenerate them: `pip install scikit-fem matplotlib`, then `python3 scripts/channel.py && python3 scripts/figures.py` from the repository root. Colours come from CSS variables, so the figures follow light and dark mode.
+
+## Local preview
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+Then open http://localhost:4000.
