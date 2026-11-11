@@ -18,7 +18,8 @@
       <p>{{ r[L].text }}</p>
       {%- for g in r.gallery %}
       <figure class="plate{% if g.narrow %} narrow{% endif %}">
-        <img src="{{ g.src | relative_url }}" alt="" width="{{ g.width }}" height="{{ g.height }}" loading="lazy">
+        <img class="only-dark" src="{{ g.src | replace: '.svg', '-dark.svg' | relative_url }}" alt="" width="{{ g.width }}" height="{{ g.height }}" loading="lazy">
+        <img class="only-light" src="{{ g.src | relative_url }}" alt="" width="{{ g.width }}" height="{{ g.height }}" loading="lazy">
         <figcaption><span class="fig-num">{{ t.fig }} {{ n }}.{{ forloop.index }}.</span> {{ g[L] }}</figcaption>
       </figure>
       {%- endfor %}

@@ -1,8 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 360"><style>
 svg{--b0:#E2BE72;--b1:#EAD7A6;--b2:#E6E5D7;--b3:#C5D9D3;--b4:#92B7B4;--b5:#5E8C99;--b6:#33607A;
 --s0:#E9EEEA;--s1:#D2E0DB;--s2:#B2CDC8;--s3:#8DB4B4;--s4:#6A9BA6;--s5:#44788F;--s6:#24506A;--line:#F6F8F7;--ink:#56666E}
-@media (prefers-color-scheme: dark){svg{--b0:#8C6A2A;--b1:#6B5C3C;--b2:#384447;--b3:#2D474C;--b4:#2E5862;--b5:#3D7384;--b6:#5C95A8;
---s0:#1E2B33;--s1:#23363F;--s2:#2A4550;--s3:#315A66;--s4:#3B7182;--s5:#5290A3;--s6:#86BED0;--line:#131C23;--ink:#9BABB1}}
 path{stroke:var(--line);stroke-width:.3;stroke-linejoin:round}
 .grid path{stroke:none;shape-rendering:crispEdges}
 .b0{fill:var(--b0)}.b1{fill:var(--b1)}.b2{fill:var(--b2)}.b3{fill:var(--b3)}.b4{fill:var(--b4)}.b5{fill:var(--b5)}.b6{fill:var(--b6)}
