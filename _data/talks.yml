@@ -4,8 +4,13 @@
   event: "XXXVIII Jornada de Matemática de la Zona Sur"
   place: "Universidad del Bío-Bío, Chile"
 
+- date: 2025-10
+  title: "A mixed formulation for the fully dynamic Biot–Brinkman model"
+  event: "Encuentro GIANuC²: Métodos Numéricos para Sistemas Multifísicos – Teorías y Aplicaciones"
+
 - date: 2025-04
   title: "Métodos mixtos en espacios de Banach para poroelasticidad acoplada con calor"
+  event: "Seminario del Departamento de Matemática y Física Aplicadas"
   place: "Universidad Católica de la Santísima Concepción, Chile"
 
 - date: 2024-09
@@ -21,3 +26,8 @@
   title: "A Banach spaces-based fully-mixed finite element method for the coupled poroelasticity and Poisson–Nernst–Planck equations"
   event: "67th Annual Meeting of the Australian Mathematical Society (AustMS 2023)"
   place: "University of Queensland, Australia"
+
+- date: 2023-10
+  title: "A Banach spaces-based mixed-primal finite element method for pseudostress-assisted diffusion problems"
+  event: "Computational Mathematics Seminar Series"
+  place: "Monash University, Australia"

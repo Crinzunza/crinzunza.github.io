@@ -6,3 +6,7 @@ vendor/
 .DS_Store
 scripts/*.pkl
 scripts/SPE10MODEL2_PERM.INC
+cv/*.aux
+cv/*.log
+cv/*.out
+cv/*.pdf

@@ -1,0 +1,270 @@
+% !TeX program = pdflatex
+\documentclass[letterpaper,12pt]{article}
+
+%------------------------------------------------
+% Packages
+%------------------------------------------------
+\usepackage[letterpaper,left=1.5cm,right=1.8cm,top=1.5cm,bottom=1.5cm]{geometry}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{tgtermes}
+\usepackage{xcolor}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\usepackage{array}
+
+%------------------------------------------------
+% Formatting
+%------------------------------------------------
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1.5pt}
+\setlength{\emergencystretch}{2em}
+\setlist[itemize]{leftmargin=1.2em,itemsep=1pt,topsep=1pt,parsep=0pt,partopsep=0pt}
+\pagestyle{empty}
+
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcommand{\CVEntry}[2]{%
+\noindent\begin{tabularx}{\linewidth}{@{}>{\raggedleft\arraybackslash}p{2.4cm}|>{\raggedright\arraybackslash}X@{}}
+\textsc{#1} & \begin{minipage}[t]{\linewidth}#2\end{minipage}
+\end{tabularx}\vspace{0.45ex}}
+\newcommand{\PubSpace}{\vspace{0.3mm}}
+
+%------------------------------------------------
+% Document
+%------------------------------------------------
+\begin{document}
+
+\begin{center}
+    {\Huge Cristian Andr\'es Inzunza Dom\'inguez}\par
+    \vspace{1mm}
+    {\Large Numerical Analysis of Partial Differential Equations}\par
+    \vspace{0.5mm}
+\end{center}
+
+%------------------------------------------------
+\section{Contact Information}
+\begin{tabularx}{\linewidth}{@{}>{\scshape}l L@{}}
+Nationality: & Chilean \\
+Residence: & San Pedro de la Paz, Chile \\
+Phone: & +56 9 3033 5689 \\
+Email: & \href{mailto:cr.inzunza.d@gmail.com}{cr.inzunza.d@gmail.com} \\
+Website: & \href{https://crinzunza.github.io/}{crinzunza.github.io} \\
+ORCID: & \href{https://orcid.org/0000-0003-2959-6779}{0000-0003-2959-6779} \\
+Scopus Author ID: & \href{https://www.scopus.com/authid/detail.uri?authorId=57214235870}{57214235870}
+\end{tabularx}
+
+%------------------------------------------------
+\section{Academic Profile}
+Ph.D. in Applied Sciences with a specialization in Mathematical Engineering and Mathematical Civil Engineer, specialized in the numerical analysis of partial differential equations. My research focuses on mixed and primal variational formulations, finite element methods in Hilbert and Banach spaces, nonlinear and coupled problems, poroelasticity, flow in deformable porous media, and a priori and a posteriori error analysis. It also addresses the establishment of existence, uniqueness, and stability of solutions at the continuous level and for semidiscrete and fully discrete approximations.
+
+%------------------------------------------------
+\section{Academic and Research Experience}
+\CVEntry{2026--present}{%
+\textbf{Full-time Faculty Member}, Department of Mathematics, Faculty of Sciences, Universidad de La Serena, La Serena, Chile.}
+
+\CVEntry{2026--present}{%
+\textbf{Postdoctoral Researcher}, Universidad Cat\'olica de la Sant\'isima Concepci\'on, Concepci\'on, Chile.\\
+Supervisor: Sergio Caucao.}
+
+\CVEntry{2025--2026}{%
+\textbf{Postdoctoral Researcher}, Center for Mathematical Modeling (CMM), Universidad de Chile, Santiago, Chile.\\
+Supervisors: Jessika Cama\~no and Sergio Caucao.}
+
+\CVEntry{2019}{%
+\textbf{Research Assistant}, Center for Research in Mathematical Engineering (CI$^2$MA), Universidad de Concepci\'on, Concepci\'on, Chile.}
+
+\CVEntry{2018}{%
+\textbf{Professional Internship}, Department of Physics, Faculty of Physical and Mathematical Sciences, Universidad de Concepci\'on, Concepci\'on, Chile.\\
+MATLAB programming of optimization algorithms applied to quantum tomography problems.}
+
+%------------------------------------------------
+\section{Current Research Project}
+\CVEntry{2026--2029}{%
+\textbf{Principal Investigator}, FONDECYT Postdoctoral Project No. 3260398, ANID-Chile.\\
+\textit{Numerical Methods for Nonlinear Poroelasticity and Related Models with Applications in Biomedicine and Engineering}.\\
+Current host institution: Universidad Cat\'olica de la Sant\'isima Concepci\'on.\\
+Sponsoring researcher: Sergio Caucao.}
+
+%------------------------------------------------
+\section{University Teaching Experience}
+\CVEntry{2024--2026}{%
+\textbf{Undergraduate Lecturer}, Universidad Cat\'olica de la Sant\'isima Concepci\'on, Concepci\'on, Chile.
+\begin{itemize}
+    \item \textbf{2024-I:} Introduction to Algebra, Algebra, Continuous Analysis in Two and Three Dimensions, and Calculus III.
+    \item \textbf{2024-II:} Calculus I, Linear Algebra, Differential Equations, and Numerical Calculus.
+    \item \textbf{2025-II:} Algebra.
+    \item \textbf{2026-I:} Calculus.
+    \item \textbf{2026-II:} Multivariable Calculus.
+\end{itemize}}
+
+\CVEntry{2014--2018}{%
+\textbf{Teaching Assistant}, Faculty of Physical and Mathematical Sciences, Universidad de Concepci\'on, Concepci\'on, Chile.\\
+Teaching assistantships in Numerical Calculus, Algebra I, Algebra II, Calculus I, Numerical Methods, and Introduction to University Mathematics.}
+
+%------------------------------------------------
+\section{Education}
+\CVEntry{2020--2024}{%
+\textsc{Universidad de Concepci\'on, Chile}.\\
+\textsl{Doctor in Applied Sciences with mention in Mathematical Engineering}.}
+
+\CVEntry{2011--2018}{%
+\textsc{Universidad de Concepci\'on, Chile}.\\
+\textsl{Mathematical Civil Engineer}.}
+
+%------------------------------------------------
+\section{Theses}
+\CVEntry{2024}{%
+\textbf{Ph.D. Thesis:} \textit{Banach Space-Based Mixed Finite Element Methods for Coupled Diffusion Problems and Related Models}.\\
+Advisor: Gabriel N. Gatica. Contact: \href{mailto:ggatica@ci2ma.udec.cl}{ggatica@ci2ma.udec.cl}.}
+
+\CVEntry{2018}{%
+\textbf{Undergraduate Thesis:} \textit{An Augmented Fully-Mixed Finite Element Method for a Coupled Flow-Transport Problem}.\\
+Advisor: Gabriel N. Gatica.}
+
+%------------------------------------------------
+\section{Scholarships}
+\CVEntry{2020--2024}{National Doctoral Scholarship, Academic Year 2020, ANID-Chile.}
+
+%------------------------------------------------
+\section{Ph.D. Coursework}
+\CVEntry{2020--1}{Numerical Analysis; Continuum Mechanics; Functional Analysis.}
+\CVEntry{2020--2}{Topics in Finite Elements I; Finite Element Theory; Partial Differential Equations.}
+\CVEntry{2021--1}{Research Seminar I; Discontinuous Galerkin Method: Theory and Applications.}
+\CVEntry{2021--2}{Research Seminar II.}
+
+%------------------------------------------------
+\section{Publications}
+
+Author of ten articles in international journals, nine published and one accepted, in the areas of numerical analysis of partial differential equations, finite element methods, and coupled problems.
+
+\subsection*{Published Journal Articles}
+\begin{itemize}
+\item {\sc S. Caucao, G.N. Gatica, L.F. Gatica and C. Inzunza},
+    {\it A priori and a posteriori error analysis of a mixed FEM for stationary convective Brinkman--Forchheimer flows with variable porosity}.
+    Journal of Computational and Applied Mathematics, vol. 492, article 118115, 2027.
+\PubSpace
+\item {\sc G.N. Gatica, C. Inzunza and R. Ruiz-Baier},
+    {\it Primal-mixed finite element methods for the coupled Biot and Poisson--Nernst--Planck equations}.
+    \href{https://doi.org/10.1016/j.camwa.2025.03.004}{Computers \& Mathematics with Applications}, vol. 186, pp. 53--83, 2025.
+\PubSpace
+\item {\sc J. Careaga, G.N. Gatica, C. Inzunza and R. Ruiz-Baier},
+    {\it New Banach spaces-based mixed finite element methods for the coupled poroelasticity and heat equations}.
+    \href{https://doi.org/10.1093/imanum/drae052}{IMA Journal of Numerical Analysis}, vol. 45, pp. 1936--1984, 2025.
+\PubSpace
+\item {\sc G.N. Gatica, C. Inzunza and F.A. Sequeira},
+    {\it New Banach spaces-based fully-mixed finite element methods for pseudostress-assisted diffusion problems}.
+    \href{https://doi.org/10.1016/j.apnum.2023.07.017}{Applied Numerical Mathematics}, vol. 193, pp. 148--178, 2023.
+\PubSpace
+\item {\sc S. Caucao, E. Colmenares, G.N. Gatica and C. Inzunza},
+    {\it A Banach spaces-based fully-mixed finite element method for the stationary chemotaxis--Navier--Stokes problem}.
+    \href{https://doi.org/10.1016/j.camwa.2023.06.006}{Computers \& Mathematics with Applications}, vol. 145, pp. 65--89, 2023.
+\PubSpace
+\item {\sc G.N. Gatica, C. Inzunza and F.A. Sequeira},
+    {\it A pseudostress-based mixed-primal finite element method for stress-assisted diffusion problems in Banach spaces}.
+    \href{https://doi.org/10.1007/s10915-022-01959-9}{Journal of Scientific Computing}, vol. 92, no. 3, article 103, 2022.
+\PubSpace
+\item {\sc G.N. Gatica, C. Inzunza, R. Ruiz-Baier and F. Sandoval},
+    {\it A posteriori error analysis of Banach spaces-based fully-mixed finite element methods for Boussinesq-type models}.
+    \href{https://doi.org/10.1515/jnma-2021-0101}{Journal of Numerical Mathematics}, vol. 30, no. 4, pp. 325--356, 2022.
+\PubSpace
+\item {\sc G.N. Gatica and C. Inzunza},
+    {\it On the well-posedness of Banach spaces-based mixed formulations for the nearly incompressible Navier--Lam\'e and Stokes equations}.
+    \href{https://doi.org/10.1016/j.camwa.2021.10.004}{Computers \& Mathematics with Applications}, vol. 102, pp. 87--94, 2021.
+\PubSpace
+\item {\sc G.N. Gatica and C. Inzunza},
+    {\it An Augmented Fully-Mixed Finite Element Method for a Coupled Flow-Transport Problem}.
+    \href{https://doi.org/10.1007/s10092-020-0355-y}{Calcolo}, vol. 57, no. 1, article 8, 2020.
+\end{itemize}
+
+\subsection*{Accepted Articles}
+\begin{itemize}
+\item {\sc J. Cama\~no, S. Caucao and C. Inzunza},
+    {\it A five-field mixed formulation for the fully dynamic Biot--Brinkman model}.
+    ESAIM: Mathematical Modelling and Numerical Analysis, accepted, 2026.
+    \href{https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=601}{Preprint 2025-28}, CI$^2$MA, Universidad de Concepci\'on.
+\end{itemize}
+
+\subsection*{Preprints and Submitted Articles}
+\begin{itemize}
+\item {\sc C. Inzunza},
+    {\it A pseudostress-based fully mixed finite element method for the stationary Biot--Poisson--Nernst--Planck system}.
+    Submitted, 2026.
+\PubSpace
+\item {\sc J. Cama\~no, S. Caucao and C. Inzunza},
+    {\it A pseudostress-based fully mixed formulation for the unsteady Biot--Brinkman model}.
+    \href{https://direcciones.ucsc.cl/content/uploads/sites/41/2026/11/camano-caucao-inzunza-2.pdf}{Preprint}, Grupo de Investigaci\'on en An\'alisis Num\'erico y C\'alculo Cient\'ifico (GIANuC$^{2}$), Universidad Cat\'olica de la Sant\'isima Concepci\'on, 2026.
+\PubSpace
+\item {\sc J. Careaga and C. Inzunza},
+    {\it Mixed finite element methods for a heat-assisted model of sedimentation}.
+    \href{https://arxiv.org/abs/2610.28903}{arXiv:2610.28903}, 2026.
+\PubSpace
+\item {\sc J. Cama\~no, S. Caucao and C. Inzunza},
+    {\it A locking-free mixed-primal formulation for the Biot--Brinkman--Forchheimer model}.
+    \href{https://direcciones.ucsc.cl/content/uploads/sites/41/2026/10/camano-caucao-inzunza-3.pdf}{Preprint 2026-9}, Grupo de Investigaci\'on en An\'alisis Num\'erico y C\'alculo Cient\'ifico (GIANuC$^{2}$), Universidad Cat\'olica de la Sant\'isima Concepci\'on, 2026.
+\end{itemize}
+
+\subsection*{Works in Preparation}
+\begin{itemize}
+\item {\sc J. Cama\~no, S. Caucao and C. Inzunza},
+    {\it A mixed formulation for the quasi-static Biot--Brinkman--Forchheimer model}.
+\end{itemize}
+
+%------------------------------------------------
+\section{Conference and Seminar Presentations}
+\CVEntry{2026--Apr.}{%
+\textbf{XXXVIII Jornada de Matemática de la Zona Sur}, Universidad del Bío-Bío, Concepción, Chile.\\
+\textit{A five-field mixed formulation for the fully dynamic Biot--Brinkman model}.}
+
+\CVEntry{2025--Oct.}{%
+\textbf{Encuentro GIANuC$^{2}$: Métodos Numéricos para Sistemas Multifísicos -- Teorías y Aplicaciones}.\\
+\textit{A mixed formulation for the fully dynamic Biot--Brinkman model}.}
+
+\CVEntry{2025--Apr.}{%
+\textbf{Seminario del Departamento de Matemática y Física Aplicadas, UCSC}.\\
+\textit{Banach spaces-based mixed methods for coupled poroelasticity and heat equations}.}
+
+\CVEntry{2024--Jan.}{%
+\textbf{Workshop on Numerical Analysis for PDE (WONAPDE 2024)}.\\
+\textit{Fully mixed methods for the coupled poroelasticity and Poisson--Nernst--Planck equations}.}
+
+\CVEntry{2023--Dec.}{%
+\textbf{The 67th Annual Meeting of the Australian Mathematical Society (AustMS 2023)}.\\
+\textit{A Banach spaces-based fully-mixed finite element method for the coupled poroelasticity and Poisson--Nernst--Planck equations}.}
+
+\CVEntry{2023--Oct.}{%
+\textbf{Computational Mathematics Seminar Series, Monash University}.\\
+\textit{A Banach spaces-based mixed-primal finite element method for pseudostress-assisted diffusion problems}.}
+
+%------------------------------------------------
+\section{Research Visits}
+\CVEntry{2023}{%
+\textbf{Research Visit}, School of Mathematics, Monash University, Australia.\\
+Advisor: Ricardo Ruiz-Baier. Contact: \href{mailto:ricardo.ruizbaier@monash.edu}{ricardo.ruizbaier@monash.edu}.}
+
+\CVEntry{2019}{%
+\textbf{Research Visit}, Department of Mathematics, Simon Fraser University, Burnaby, B.C., Canada.\\
+Advisor: Nilima Nigam. Contact: \href{mailto:nigam@math.sfu.ca}{nigam@math.sfu.ca}.}
+
+%------------------------------------------------
+\section{Academic Event Organization}
+\CVEntry{2025--Oct.}{%
+\textbf{GIANuC$^{2}$ Meeting: Numerical Methods for Multiphysics Systems -- Theories and Applications}.}
+
+%------------------------------------------------
+\section{Peer Review}
+\CVEntry{2025}{%
+\textit{Computers \& Mathematics with Applications}.\\
+\textit{Finite Elements in Analysis and Design}.}
+
+%------------------------------------------------
+\section{Programming Languages and Scientific Software}
+\begin{tabularx}{\linewidth}{@{}>{\bfseries}l L@{}}
+Advanced proficiency: & LaTeX, MATLAB, FreeFEM++, FEniCS.
+\end{tabularx}
+
+\end{document}

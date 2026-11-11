@@ -3,20 +3,21 @@
   role: { en: "Full-time faculty member, Department of Mathematics", es: "Profesor de jornada completa, Departamento de Matemáticas" }
 
 - institution: "Universidad Católica de la Santísima Concepción, Chile"
-  years: "2024"
-  role: { en: "Part-time lecturer", es: "Docente part-time" }
+  years: "2024–2026"
+  role: { en: "Undergraduate lecturer", es: "Docente de pregrado" }
   courses:
-    - { en: "Algebra and Linear Algebra", es: "Álgebra y Álgebra Lineal" }
-    - { en: "Calculus", es: "Cálculo" }
-    - { en: "Multivariable Calculus", es: "Cálculo en Varias Variables" }
+    - { en: "2026-II: Multivariable Calculus", es: "2026-II: Cálculo en Varias Variables" }
+    - { en: "2026-I: Calculus", es: "2026-I: Cálculo" }
+    - { en: "2025-II: Algebra", es: "2025-II: Álgebra" }
+    - { en: "2024-II: Calculus I, Linear Algebra, Differential Equations and Numerical Calculus", es: "2024-II: Cálculo I, Álgebra Lineal, Ecuaciones Diferenciales y Cálculo Numérico" }
+    - { en: "2024-I: Introduction to Algebra, Algebra, Continuous Analysis in Two and Three Dimensions, and Calculus III", es: "2024-I: Introducción al Álgebra, Álgebra, Análisis Continuo en Dos y Tres Dimensiones, y Cálculo III" }
 
 - institution: "Universidad de Concepción, Chile"
-  years: "2013–2018"
-  role: { en: "Teaching assistant", es: "Ayudante" }
+  years: "2014–2018"
+  role: { en: "Teaching assistant, Faculty of Physical and Mathematical Sciences", es: "Ayudante, Facultad de Ciencias Físicas y Matemáticas" }
   courses:
     - { en: "Numerical Calculus", es: "Cálculo Numérico" }
     - { en: "Numerical Methods", es: "Métodos Numéricos" }
-    - { en: "Linear Algebra", es: "Álgebra Lineal" }
-    - { en: "Calculus", es: "Cálculo" }
-    - { en: "Algebra and Trigonometry", es: "Álgebra y Trigonometría" }
+    - { en: "Algebra I and Algebra II", es: "Álgebra I y Álgebra II" }
+    - { en: "Calculus I", es: "Cálculo I" }
     - { en: "Introduction to University Mathematics", es: "Introducción a la Matemática Universitaria" }

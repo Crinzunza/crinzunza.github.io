@@ -7,11 +7,12 @@ author:
   name: Cristian Inzunza
   full_name: Cristian Andrés Inzunza Domínguez
   short_name: C. Inzunza          # used to highlight your name in author lists
-  email: crinzunza@ucsc.cl
+  email: cr.inzunza.d@gmail.com
   photo: /assets/img/cristian.jpg
   links:
     - { label: Google Scholar, url: "https://scholar.google.com/citations?user=jkOAgcQAAAAJ&hl=es" }
     - { label: ORCID, url: "https://orcid.org/0000-0003-2959-6779" }
+    - { label: Scopus, url: "https://www.scopus.com/authid/detail.uri?authorId=57214235870" }
     - { label: ResearchGate, url: "https://www.researchgate.net/profile/Cristian-Inzunza" }
     - { label: GitHub, url: "https://github.com/Crinzunza" }
 
@@ -38,3 +39,4 @@ exclude:
   - vendor
   - .jekyll-cache
   - scripts
+  - cv

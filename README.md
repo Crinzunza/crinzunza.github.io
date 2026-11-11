@@ -15,7 +15,7 @@ Personal academic website of Cristian Inzunza, built with plain Jekyll (no theme
 | Fondecyt project text | `fondecyt.html` and `es/fondecyt.html` |
 | Name, email, affiliation, profile links | `_config.yml` |
 | Menu labels and interface strings | `_data/i18n.yml` |
-| CV | replace `files/cv.pdf` |
+| CV | edit `cv/cv.tex`, compile it with `pdflatex`, and copy `cv/cv.pdf` to `files/cv.pdf` |
 | Colours and typography | `assets/css/site.css` (tokens at the top) |
 
 ### Adding a publication
