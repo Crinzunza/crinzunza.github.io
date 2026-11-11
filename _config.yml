@@ -22,8 +22,8 @@ affiliation:
 address: "Juan Cisternas 1200, La Serena, Chile"
 
 description:
-  en: "Postdoctoral researcher in numerical analysis of nonlinear and coupled PDEs: mixed finite element methods for poroelasticity, porous media flow and transport."
-  es: "Investigador postdoctoral en análisis numérico de EDP no lineales y acopladas: métodos de elementos finitos mixtos para poroelasticidad, flujo en medios porosos y transporte."
+  en: "Mathematician working on the numerical analysis of nonlinear and coupled PDEs: mixed finite element methods for poroelasticity, porous media flow and transport."
+  es: "Matemático dedicado al análisis numérico de EDP no lineales y acopladas: métodos de elementos finitos mixtos para poroelasticidad, flujo en medios porosos y transporte."
 
 # Build settings -----------------------------------------------------------
 markdown: kramdown

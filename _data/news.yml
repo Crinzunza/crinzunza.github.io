@@ -1,6 +1,10 @@
 # Newest first. `date` as YYYY-MM (or YYYY if the month is unknown).
 # `link` is optional; internal links start with /.
 
+- date: 2026-11
+  en: "Joined the Department of Mathematics, Universidad de La Serena, as a full-time faculty member."
+  es: "Me incorporé como profesor de jornada completa al Departamento de Matemáticas de la Universidad de La Serena."
+
 - date: 2026-10
   en: "New preprint on arXiv: mixed finite element methods for a heat-assisted model of sedimentation, with J. Careaga."
   es: "Nuevo preprint en arXiv: métodos de elementos finitos mixtos para un modelo de sedimentación asistida por calor, con J. Careaga."

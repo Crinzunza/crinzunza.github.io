@@ -10,9 +10,11 @@
     <div>
       <h2 id="teach-{{ forloop.index }}">{{ e.institution }}</h2>
       <p class="teach-role">{{ e.role[L] }}</p>
+      {%- if e.courses %}
       <ul class="courses">
         {%- for c in e.courses %}<li>{{ c[L] }}</li>{% endfor %}
       </ul>
+      {%- endif %}
     </div>
   </section>
   {%- endfor %}
