@@ -4,6 +4,14 @@
 #   fondecyt: true  -> listed as an output of Fondecyt Postdoctorado 3260398
 #   links:   doi | arxiv | preprint (full URL) | code (full URL)
 
+- title: "A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system"
+  authors: "C. Inzunza"
+  venue: "Submitted"
+  year: 2026
+  status: review
+  topics: [poro, transport, apost]
+  fondecyt: true
+
 - title: "Mixed finite element methods for a heat-assisted model of sedimentation"
   authors: "J. Careaga, C. Inzunza"
   venue: "arXiv preprint arXiv:2610.28903"
@@ -22,20 +30,21 @@
   fondecyt: true
   preprint: "https://direcciones.ucsc.cl/content/uploads/sites/41/2026/10/camano-caucao-inzunza-3.pdf"
 
-- title: "A five-field mixed formulation for the fully dynamic Biot–Brinkman model"
-  authors: "J. Camaño, S. Caucao, C. Inzunza"
-  venue: "Preprint 2025-28, CI²MA, Universidad de Concepción"
-  year: 2025
-  status: review
-  topics: [poro, flow]
-  preprint: "https://www.ci2ma.udec.cl/publicaciones/prepublicaciones/index.php"
-
 - title: "A priori and a posteriori error analysis of a mixed FEM for stationary convective Brinkman–Forchheimer flows with variable porosity"
   authors: "S. Caucao, G. N. Gatica, L. F. Gatica, C. Inzunza"
   venue: "Journal of Computational and Applied Mathematics, 492, Article 118115"
   year: 2027
   status: published
   topics: [flow, apost]
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=617"
+
+- title: "A five-field mixed formulation for the fully dynamic Biot–Brinkman model"
+  authors: "J. Camaño, S. Caucao, C. Inzunza"
+  venue: "ESAIM: Mathematical Modelling and Numerical Analysis, accepted"
+  year: 2026
+  status: published
+  topics: [poro, flow]
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=601"
 
 - title: "Primal-mixed finite element methods for the coupled Biot and Poisson–Nernst–Planck equations"
   authors: "G. N. Gatica, C. Inzunza, R. Ruiz-Baier"
@@ -44,6 +53,7 @@
   status: published
   topics: [poro, transport]
   doi: "10.1016/j.camwa.2025.03.004"
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=551"
 
 - title: "New Banach spaces-based mixed finite element methods for the coupled poroelasticity and heat equations"
   authors: "J. Careaga, G. N. Gatica, C. Inzunza, R. Ruiz-Baier"
@@ -52,6 +62,7 @@
   status: published
   topics: [poro, transport]
   doi: "10.1093/imanum/drae052"
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=539"
 
 - title: "A Banach spaces-based fully-mixed finite element method for the stationary chemotaxis-Navier–Stokes problem"
   authors: "S. Caucao, E. Colmenares, G. N. Gatica, C. Inzunza"
@@ -60,6 +71,7 @@
   status: published
   topics: [flow, transport]
   doi: "10.1016/j.camwa.2023.06.006"
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=485"
 
 - title: "New Banach spaces-based fully-mixed finite element methods for pseudostress-assisted diffusion problems"
   authors: "G. N. Gatica, C. Inzunza, F. A. Sequeira"
@@ -68,6 +80,7 @@
   status: published
   topics: [transport]
   doi: "10.1016/j.apnum.2023.07.017"
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=519"
 
 - title: "A pseudostress-based mixed-primal finite element method for stress-assisted diffusion problems in Banach spaces"
   authors: "G. N. Gatica, C. Inzunza, F. A. Sequeira"
@@ -76,6 +89,7 @@
   status: published
   topics: [transport]
   doi: "10.1007/s10915-022-01959-9"
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=471"
 
 - title: "A posteriori error analysis of Banach spaces-based fully-mixed finite element methods for Boussinesq-type models"
   authors: "G. N. Gatica, C. Inzunza, R. Ruiz-Baier, F. Sandoval"
@@ -84,6 +98,7 @@
   status: published
   topics: [flow, transport, apost]
   doi: "10.1515/jnma-2021-0101"
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=459"
 
 - title: "On the well-posedness of Banach spaces-based mixed formulations for the nearly incompressible Navier–Lamé and Stokes equations"
   authors: "G. N. Gatica, C. Inzunza"
@@ -92,6 +107,7 @@
   status: published
   topics: [flow]
   doi: "10.1016/j.camwa.2021.10.004"
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=450"
 
 - title: "An augmented fully-mixed finite element method for a coupled flow-transport problem"
   authors: "G. N. Gatica, C. Inzunza"
@@ -100,3 +116,4 @@
   status: published
   topics: [flow, transport]
   doi: "10.1007/s10092-020-0355-y"
+  preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=346"

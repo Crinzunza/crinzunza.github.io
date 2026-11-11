@@ -16,6 +16,12 @@
     <div class="prose">
       <h2 id="{{ r.id }}-h">{{ r[L].title }}</h2>
       <p>{{ r[L].text }}</p>
+      {%- for g in r.gallery %}
+      <figure class="plate">
+        <img src="{{ g.src | relative_url }}" alt="" width="{{ g.width }}" height="{{ g.height }}" loading="lazy">
+        <figcaption><span class="fig-num">{{ t.fig }} {{ n }}.{{ forloop.index }}.</span> {{ g[L] }}</figcaption>
+      </figure>
+      {%- endfor %}
       <h3>{{ t.related }}</h3>
       <ol class="pubs compact">
         {%- for p in bytyear %}{% if p.topics contains r.id %}{% include pub-item.html pub=p lang=L %}{% endif %}{% endfor %}

@@ -2,6 +2,12 @@
 # `figure` is an SVG in _includes/; replace with an image path in `image:` to use a real simulation figure.
 
 - id: poro
+  gallery:
+    - src: /assets/img/papers/bpnp-polarization.jpg
+      width: 1400
+      height: 922
+      en: "Ionic polarization in a charged porous medium (Example 3): electric potential, displacement magnitude and Darcy flux for applied voltages V = 0 (top) and V = 0.9 (bottom), computed with FEniCS. From C. Inzunza, <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>, submitted."
+      es: "Polarización iónica en un medio poroso cargado (Ejemplo 3): potencial eléctrico, magnitud del desplazamiento y flujo de Darcy para voltajes aplicados V = 0 (arriba) y V = 0.9 (abajo), calculados con FEniCS. De C. Inzunza, <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>, enviado."
   figure: thumb-poro.svg
   en:
     title: "Poroelasticity and multiphysics coupling"
@@ -51,6 +57,12 @@
     caption: "Magnitud de la velocidad cerca de la cavidad en el canal del Ejemplo 4 de Caucao, Gatica, Gatica e Inzunza (J. Comput. Appl. Math., 2027), en la malla adaptada más fina, recalculada para esta página. El flujo se acelera sobre la cavidad y se desvía de la región de baja porosidad."
 
 - id: transport
+  gallery:
+    - src: /assets/img/papers/bpnp-adaptive-charge.jpg
+      width: 1100
+      height: 630
+      en: "Adapted mesh after four refinements and mobile-charge difference at V = 0 (Example 3). The refinement concentrates at the transition of the fixed charge. From C. Inzunza, <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>, submitted."
+      es: "Malla adaptada tras cuatro refinamientos y diferencia de carga móvil para V = 0 (Ejemplo 3). El refinamiento se concentra en la transición de la carga fija. De C. Inzunza, <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>, enviado."
   figure: thumb-transport.svg
   en:
     title: "Transport, diffusion and their coupling with mechanics"
@@ -75,6 +87,12 @@
     caption: "Densidad celular inicial del Ejemplo 3 de Caucao, Colmenares, Gatica e Inzunza (Comput. Math. Appl., 2023): tres cúmulos cerca del borde superior, con curvas de nivel de la señal química."
 
 - id: apost
+  gallery:
+    - src: /assets/img/papers/bpnp-adaptive-star.jpg
+      width: 1400
+      height: 557
+      en: "Adaptive refinement on a star-shaped domain (Example 2): final mesh, charge difference and electric-displacement magnitude, with RT1–P1 elements and 300,770 degrees of freedom. From C. Inzunza, <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>, submitted."
+      es: "Refinamiento adaptativo en un dominio estrellado (Ejemplo 2): malla final, diferencia de carga y magnitud del desplazamiento eléctrico, con elementos RT1–P1 y 300.770 grados de libertad. De C. Inzunza, <em>A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system</em>, enviado."
   figure: thumb-adapt.svg
   en:
     title: "A posteriori error analysis and adaptivity"
