@@ -101,20 +101,15 @@ p { margin: 0 0 1rem; }
 .hero { position: relative; }
 .hero-figure { margin: 0; }
 .hero-figure .mesh { width: 100%; height: clamp(15rem, 34vw, 27rem); }
-.hero-figure figcaption {
-  font-family: var(--sans); font-size: .8rem; color: var(--muted);
-  text-align: right; padding-top: .6rem;
-}
-.hero-figure figcaption { padding-left: 50%; }
 .fig-num { color: var(--ink); font-weight: 500; }
-.hero-text { position: relative; margin-top: -9.5rem; pointer-events: none; }
+.hero-text { position: relative; margin-top: calc(-1 * (clamp(2.7rem, 7.2vw, 5.4rem) + 1.2rem)); pointer-events: none; }
 .hero-text > * { pointer-events: auto; }
 .hero h1 {
   display: inline-block; background: var(--paper);
   padding: .9rem 2rem .3rem 0; margin-left: calc(-1 * var(--gutter)); padding-left: var(--gutter);
   font-size: clamp(2.7rem, 7.2vw, 5.4rem); font-weight: 400; letter-spacing: -0.02em; line-height: 1;
 }
-.lede { font-size: 1.3rem; line-height: 1.45; max-width: 34rem; color: var(--ink); margin: 1rem 0 0; }
+.lede { font-size: 1.3rem; line-height: 1.45; max-width: 34rem; color: var(--ink); margin: 1.25rem 0 0; }
 
 .lvl1, .lvl2 { opacity: 0; animation: refine .7s ease-out forwards; }
 .lvl1 { animation-delay: .6s; }
@@ -128,7 +123,6 @@ p { margin: 0 0 1rem; }
 @media (max-width: 700px) {
   .hero-text { margin-top: 0; }
   .hero h1 { padding: 1.25rem 0 0; margin-left: 0; padding-left: 0; background: none; }
-  .hero-figure figcaption { padding-left: var(--gutter); text-align: left; }
 }
 
 .research-line figcaption { font-family: var(--sans); font-size: .82rem; color: var(--muted); line-height: 1.45; margin-top: .7rem; max-width: 46rem; }
