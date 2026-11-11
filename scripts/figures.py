@@ -32,11 +32,6 @@ def svg_from(p, t, val, pal, view, width, lo=None, hi=None, extra='', cls='mesh'
 
 L = pickle.load(open('scripts/channel.pkl', 'rb'))
 vmax = max(l['vel'].max() for l in L)
-# ---- hero: channel, three refinement levels, velocity magnitude ----
-sel = [L[0], L[4], L[-1]]
-svg, _ = svg_from(None, None, None, 's', (0, 2.5, 0, 0.3), 1500, lo=0, hi=vmax,
-                  groups=[(l['p'], l['t'], l['vel']) for l in sel], cls='mesh hero-mesh', quant=True)
-open(OUT+'hero-mesh.svg', 'w').write(svg); print('hero', len(svg), [l['t'].shape[1] for l in sel])
 # ---- flow: velocity near the cavity, final mesh ----
 f = L[-1]
 svg, _ = svg_from(f['p'], f['t'], f['vel'], 's', (0.35, 1.55, 0, 0.3), 600, cls='mesh thumb', quant=True)
