@@ -17,7 +17,7 @@
       <h2 id="{{ r.id }}-h">{{ r[L].title }}</h2>
       <p>{{ r[L].text }}</p>
       {%- for g in r.gallery %}
-      <figure class="plate">
+      <figure class="plate{% if g.narrow %} narrow{% endif %}">
         <img src="{{ g.src | relative_url }}" alt="" width="{{ g.width }}" height="{{ g.height }}" loading="lazy">
         <figcaption><span class="fig-num">{{ t.fig }} {{ n }}.{{ forloop.index }}.</span> {{ g[L] }}</figcaption>
       </figure>

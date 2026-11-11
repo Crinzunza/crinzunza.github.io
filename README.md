@@ -47,6 +47,14 @@ The mesh figures in `_includes/*.svg` reproduce numerical examples from the CI²
 - `thumb-poro.svg`: manufactured solution of Example 1, pp24-02.
 - `thumb-transport.svg`: initial data of Example 3, pp22-16.
 
+Figures in `assets/img/figs/` recreate examples of the recent manuscripts in the same style (self-contained SVG with light and dark palettes):
+
+- `bpnp-star.svg`: exact fields of Example 2, Biot–Poisson–Nernst–Planck manuscript (`scripts/fig_star.py`).
+- `bpnp-polarization.svg`: Example 3 of the same manuscript, recomputed in primal form (`scripts/fig_polar.py`).
+- `fivefield-exact.svg`: exact solution of Example 1, five-field Biot–Brinkman (`scripts/fig_fivefield.py`).
+- `spe10-layer70.svg`: SPE10 layer 70 (data from the OPM `opm-data` repository) and a steady Darcy velocity (`scripts/fig_spe10.py`).
+- `kynch-batch.svg`: batch settling of Example 2, arXiv:2610.28903, solids equation only (`scripts/fig_kynch.py`).
+
 To regenerate them: `pip install scikit-fem matplotlib`, then `python3 scripts/channel.py && python3 scripts/figures.py` from the repository root. Colours come from CSS variables, so the figures follow light and dark mode.
 
 ## Local preview

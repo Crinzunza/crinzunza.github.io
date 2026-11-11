@@ -5,3 +5,4 @@ Gemfile.lock
 vendor/
 .DS_Store
 scripts/*.pkl
+scripts/SPE10MODEL2_PERM.INC

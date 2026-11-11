@@ -7,6 +7,11 @@
   link: "/publications/"
 
 - date: 2026-11
+  en: "New GIANuC² preprint: a pseudostress-based fully mixed formulation for the unsteady Biot–Brinkman model, with J. Camaño and S. Caucao."
+  es: "Nuevo preprint GIANuC²: una formulación totalmente mixta basada en pseudotensiones para el modelo de Biot–Brinkman no estacionario, con J. Camaño y S. Caucao."
+  link: "https://direcciones.ucsc.cl/content/uploads/sites/41/2026/11/camano-caucao-inzunza-2.pdf"
+
+- date: 2026-11
   en: "Submitted: a pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system."
   es: "Enviado: un método de elementos finitos totalmente mixto basado en pseudotensiones para el sistema estacionario de Biot–Poisson–Nernst–Planck."
   link: "/research/"

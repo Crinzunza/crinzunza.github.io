@@ -4,6 +4,15 @@
 #   fondecyt: true  -> listed as an output of Fondecyt Postdoctorado 3260398
 #   links:   doi | arxiv | preprint (full URL) | code (full URL)
 
+- title: "A pseudostress-based fully mixed formulation for the unsteady Biot–Brinkman model"
+  authors: "J. Camaño, S. Caucao, C. Inzunza"
+  venue: "Preprint, GIANuC², Universidad Católica de la Santísima Concepción"
+  year: 2026
+  status: review
+  topics: [poro, flow]
+  fondecyt: true
+  preprint: "https://direcciones.ucsc.cl/content/uploads/sites/41/2026/11/camano-caucao-inzunza-2.pdf"
+
 - title: "A pseudostress-based fully mixed finite element method for the stationary Biot–Poisson–Nernst–Planck system"
   authors: "C. Inzunza"
   venue: "Submitted"
