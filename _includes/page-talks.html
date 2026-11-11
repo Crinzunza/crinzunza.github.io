@@ -1,0 +1,18 @@
+{%- assign L = include.lang -%}
+{%- assign t = site.data.i18n[L] -%}
+<div class="wrap page">
+  <header class="page-head">
+    <h1>{{ t.nav.talks }}</h1>
+  </header>
+  <ul class="dated">
+    {%- for k in site.data.talks %}
+    <li>
+      <span class="news-date">{% include date.html d=k.date lang=L %}</span>
+      <div>
+        <p class="pub-title">{{ k.title }}</p>
+        <p class="pub-venue">{% if k.event %}{{ k.event }}{% if k.place %}, {% endif %}{% endif %}{{ k.place }}</p>
+      </div>
+    </li>
+    {%- endfor %}
+  </ul>
+</div>

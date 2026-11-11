@@ -1,0 +1,19 @@
+{%- assign L = include.lang -%}
+{%- assign t = site.data.i18n[L] -%}
+<div class="wrap page">
+  <header class="page-head">
+    <h1>{{ t.nav.teaching }}</h1>
+  </header>
+  {%- for e in site.data.teaching %}
+  <section class="teach" aria-labelledby="teach-{{ forloop.index }}">
+    <p class="news-date">{{ e.years }}</p>
+    <div>
+      <h2 id="teach-{{ forloop.index }}">{{ e.institution }}</h2>
+      <p class="teach-role">{{ e.role[L] }}</p>
+      <ul class="courses">
+        {%- for c in e.courses %}<li>{{ c[L] }}</li>{% endfor %}
+      </ul>
+    </div>
+  </section>
+  {%- endfor %}
+</div>

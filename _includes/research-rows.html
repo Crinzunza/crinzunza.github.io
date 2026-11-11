@@ -1,0 +1,15 @@
+{%- comment -%} Compact research lines. Params: lang {%- endcomment -%}
+{%- assign t = site.data.i18n[include.lang] -%}
+<ul class="lines">
+  {%- for r in site.data.research %}
+  <li>
+    <a class="line" href="{{ t.pages.research | relative_url }}#{{ r.id }}">
+      <span class="line-fig">{% if r.image %}<img src="{{ r.image | relative_url }}" alt="">{% else %}{% include {{ r.figure }} %}{% endif %}</span>
+      <span class="line-text">
+        <span class="line-title">{{ r[include.lang].title }}</span>
+        <span class="line-short">{{ r[include.lang].short }}</span>
+      </span>
+    </a>
+  </li>
+  {%- endfor %}
+</ul>

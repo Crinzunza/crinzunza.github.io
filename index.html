@@ -1,0 +1,14 @@
+---
+layout: default
+lang: en
+ref: home
+---
+{%- capture about -%}
+<p>I am a postdoctoral researcher at the Departamento de Matemáticas, Universidad de La Serena, Chile. Since April 2026 I have been working on my ANID Fondecyt Postdoctoral project No. 3260398, <a href="{{ '/fondecyt/' | relative_url }}"><em>Numerical Methods for Nonlinear Poroelasticity and Related Models with Applications in Biomedicine and Engineering</em></a>, under the supervision of Prof. <a href="https://scaucao.github.io/">Sergio Caucao</a>. I am also a member of the <a href="https://gianuc2.ucsc.cl/">Numerical Analysis and Scientific Computing Research Group (GIANuC²)</a>.</p>
+<p>From April 2025 to March 2026 I was a postdoctoral researcher at the Center for Mathematical Modeling (CMM), Universidad de Chile, working on finite element methods for nonlinear problems with biomedical and engineering applications, under the supervision of Prof. Sergio Caucao and Prof. Jessika Camaño.</p>
+<p>I received my Ph.D. in Applied Sciences with a mention in Mathematical Engineering from the Universidad de Concepción (2020–2024), advised by Prof. <a href="https://www.ci2ma.udec.cl/ggatica/">Gabriel N. Gatica</a>, after earning my degree in Mathematical Civil Engineering at the same university (2011–2018).</p>
+<p>I work on the numerical analysis of nonlinear and coupled partial differential equations, mainly through mixed finite element methods in Banach spaces. The models come from continuum mechanics: poroelasticity, heat transfer, stress-assisted diffusion and chemotaxis–fluid interaction. Their multiphysics coupling leads to nonstandard variational formulations, whose well-posedness, discrete stability and error analysis are the core of my work.</p>
+{%- endcapture -%}
+{% include home.html lang="en"
+   lede="Mixed finite element methods for nonlinear and coupled PDEs, with a focus on poroelasticity, flow in porous media and transport."
+   about_title="About me" about=about recent_title="Recent articles" %}

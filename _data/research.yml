@@ -1,0 +1,95 @@
+# Research lines. `id` links publications (topics) to each line.
+# `figure` is an SVG in _includes/; replace with an image path in `image:` to use a real simulation figure.
+
+- id: poro
+  figure: thumb-poro.svg
+  en:
+    title: "Poroelasticity and multiphysics coupling"
+    short: "Biot's consolidation model coupled with heat transfer, electrochemical transport and fluid inertia."
+    text: >-
+      I study Biot's poroelasticity model and its couplings with heat transfer,
+      Poisson–Nernst–Planck electrochemical transport, and Brinkman and Forchheimer
+      flow. The formulations use the total pressure and pseudostress-type unknowns,
+      and are designed to remain stable in the nearly incompressible limit, where
+      standard discretisations suffer from locking. Applications include deformable
+      porous media in engineering and fluid flow in biological tissues.
+    caption: "A loaded poroelastic block: deformed mesh coloured by the fluid pressure."
+  es:
+    title: "Poroelasticidad y acoplamientos multifísicos"
+    short: "El modelo de consolidación de Biot acoplado con transferencia de calor, transporte electroquímico e inercia del fluido."
+    text: >-
+      Estudio el modelo de poroelasticidad de Biot y sus acoplamientos con
+      transferencia de calor, transporte electroquímico de Poisson–Nernst–Planck
+      y flujo de Brinkman y Forchheimer. Las formulaciones utilizan la presión total
+      e incógnitas de tipo pseudotensión, y están diseñadas para mantenerse estables
+      en el límite casi incompresible, donde las discretizaciones estándar sufren
+      bloqueo (locking). Las aplicaciones incluyen medios porosos deformables en
+      ingeniería y el flujo de fluidos en tejidos biológicos.
+    caption: "Un bloque poroelástico cargado: malla deformada coloreada por la presión del fluido."
+
+- id: flow
+  figure: thumb-flow.svg
+  en:
+    title: "Flow in porous media and incompressible fluids"
+    short: "Mixed methods for Stokes, Navier–Stokes, Brinkman and Brinkman–Forchheimer flows."
+    text: >-
+      Mixed finite element methods for Stokes, Navier–Stokes, Brinkman and
+      Brinkman–Forchheimer equations, including convective terms, variable porosity
+      and nearly incompressible elasticity. The analysis relies on Banach-space
+      formulations in which the natural integrability of the nonlinear terms
+      determines the functional setting.
+    caption: "Flow past a circular inclusion: mesh coloured by the velocity magnitude."
+  es:
+    title: "Flujo en medios porosos y fluidos incompresibles"
+    short: "Métodos mixtos para flujos de Stokes, Navier–Stokes, Brinkman y Brinkman–Forchheimer."
+    text: >-
+      Métodos de elementos finitos mixtos para las ecuaciones de Stokes,
+      Navier–Stokes, Brinkman y Brinkman–Forchheimer, incluyendo términos convectivos,
+      porosidad variable y elasticidad casi incompresible. El análisis se apoya en
+      formulaciones en espacios de Banach, donde la integrabilidad natural de los
+      términos no lineales determina el marco funcional.
+    caption: "Flujo alrededor de una inclusión circular: malla coloreada por la magnitud de la velocidad."
+
+- id: transport
+  figure: thumb-transport.svg
+  en:
+    title: "Transport, diffusion and their coupling with mechanics"
+    short: "Stress-assisted diffusion, chemotaxis–fluid interaction, Boussinesq flows and sedimentation."
+    text: >-
+      Coupled problems in which a concentration or temperature is transported by a
+      flow or driven by mechanical stress: stress-assisted diffusion,
+      chemotaxis–Navier–Stokes, Boussinesq-type models, flow–transport systems and
+      heat-assisted sedimentation. Well-posedness is typically obtained through
+      fixed-point arguments combined with the theory of mixed and monotone problems.
+    caption: "A concentration plume transported downstream."
+  es:
+    title: "Transporte, difusión y su acoplamiento con la mecánica"
+    short: "Difusión asistida por tensiones, interacción quimiotaxis–fluido, flujos de Boussinesq y sedimentación."
+    text: >-
+      Problemas acoplados en que una concentración o una temperatura es transportada
+      por un flujo o impulsada por tensiones mecánicas: difusión asistida por
+      tensiones, quimiotaxis–Navier–Stokes, modelos de tipo Boussinesq, sistemas de
+      flujo–transporte y sedimentación asistida por calor. El buen planteamiento se
+      obtiene usualmente mediante argumentos de punto fijo combinados con la teoría
+      de problemas mixtos y monótonos.
+    caption: "Una pluma de concentración transportada aguas abajo."
+
+- id: apost
+  figure: thumb-adapt.svg
+  en:
+    title: "A posteriori error analysis and adaptivity"
+    short: "Reliable and efficient residual estimators for mixed methods in Banach spaces."
+    text: >-
+      Residual-based a posteriori error estimators for fully-mixed and mixed-primal
+      methods, with proofs of reliability and efficiency, and their use to drive
+      adaptive mesh refinement in problems with singularities or sharp layers.
+    caption: "Adaptive refinement towards the re-entrant corner of an L-shaped domain."
+  es:
+    title: "Análisis de error a posteriori y adaptatividad"
+    short: "Estimadores residuales confiables y eficientes para métodos mixtos en espacios de Banach."
+    text: >-
+      Estimadores de error a posteriori de tipo residual para métodos totalmente
+      mixtos y primal-mixtos, con demostraciones de confiabilidad y eficiencia, y su
+      uso para guiar el refinamiento adaptativo de mallas en problemas con
+      singularidades o capas abruptas.
+    caption: "Refinamiento adaptativo hacia la esquina reentrante de un dominio en forma de L."

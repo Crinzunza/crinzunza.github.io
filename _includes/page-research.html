@@ -1,0 +1,26 @@
+{%- assign L = include.lang -%}
+{%- assign t = site.data.i18n[L] -%}
+{%- assign bytyear = site.data.publications | sort: "year" | reverse -%}
+<div class="wrap page">
+  <header class="page-head">
+    <h1>{{ t.nav.research }}</h1>
+    <p class="lede">{{ include.intro }}</p>
+  </header>
+  {%- for r in site.data.research %}
+  {%- assign n = forloop.index -%}
+  <section class="research-line" id="{{ r.id }}" aria-labelledby="{{ r.id }}-h">
+    <figure>
+      {% if r.image %}<img src="{{ r.image | relative_url }}" alt="">{% else %}{% include {{ r.figure }} %}{% endif %}
+      <figcaption><span class="fig-num">{{ t.fig }} {{ n }}.</span> {{ r[L].caption }}</figcaption>
+    </figure>
+    <div class="prose">
+      <h2 id="{{ r.id }}-h">{{ r[L].title }}</h2>
+      <p>{{ r[L].text }}</p>
+      <h3>{{ t.related }}</h3>
+      <ol class="pubs compact">
+        {%- for p in bytyear %}{% if p.topics contains r.id %}{% include pub-item.html pub=p lang=L %}{% endif %}{% endfor %}
+      </ol>
+    </div>
+  </section>
+  {%- endfor %}
+</div>

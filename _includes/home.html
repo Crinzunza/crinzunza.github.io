@@ -1,0 +1,35 @@
+{%- assign t = site.data.i18n[include.lang] -%}
+{%- assign recent = site.data.publications | where: "status", "published" -%}
+{% include hero.html lang=include.lang lede=include.lede %}
+
+<div class="wrap home-grid">
+  <section class="about" aria-labelledby="about-h">
+    <img class="portrait" src="{{ site.author.photo | relative_url }}" alt="{{ t.photo_alt }}" width="280" height="280">
+    <div class="prose">
+      <h2 id="about-h">{{ include.about_title }}</h2>
+      {{ include.about }}
+    </div>
+  </section>
+
+  <section aria-labelledby="research-h">
+    <h2 id="research-h">{{ t.nav.research }}</h2>
+    {% include research-rows.html lang=include.lang %}
+    <p class="more"><a href="{{ t.pages.research | relative_url }}">{{ t.research_more }}</a></p>
+  </section>
+
+  <div class="split">
+    <section aria-labelledby="news-h">
+      <h2 id="news-h">{{ t.nav.news }}</h2>
+      {% include news-list.html lang=include.lang limit=4 %}
+      <p class="more"><a href="{{ t.pages.news | relative_url }}">{{ t.all_news }}</a></p>
+    </section>
+
+    <section aria-labelledby="pubs-h">
+      <h2 id="pubs-h">{{ include.recent_title }}</h2>
+      <ol class="pubs compact">
+        {%- for p in recent limit: 3 %}{% include pub-item.html pub=p lang=include.lang %}{% endfor %}
+      </ol>
+      <p class="more"><a href="{{ t.pages.publications | relative_url }}">{{ t.all_pubs }}</a></p>
+    </section>
+  </div>
+</div>

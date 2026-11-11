@@ -1,0 +1,32 @@
+{%- assign L = include.lang -%}
+{%- assign t = site.data.i18n[L] -%}
+{%- assign review = site.data.publications | where: "status", "review" -%}
+{%- assign published = site.data.publications | where: "status", "published" -%}
+<div class="wrap page">
+  <header class="page-head">
+    <h1>{{ t.nav.publications }}</h1>
+    <p class="lede">{{ include.intro }} <a href="{{ site.author.links[0].url }}">Google Scholar</a>.</p>
+  </header>
+
+  <div class="filter" role="group" aria-label="{{ t.filter_label }}" hidden>
+    <span class="filter-label">{{ t.filter_label }}</span>
+    <button type="button" data-topic="all" aria-pressed="true">{{ t.filter_all }}</button>
+    {%- for r in site.data.research %}
+    <button type="button" data-topic="{{ r.id }}" aria-pressed="false">{{ r[L].title }}</button>
+    {%- endfor %}
+  </div>
+
+  <section aria-labelledby="rev-h">
+    <h2 id="rev-h">{{ t.under_review }} <span class="count">{{ review.size }}</span></h2>
+    <ol class="pubs" reversed>
+      {%- for p in review %}{% include pub-item.html pub=p lang=L %}{% endfor %}
+    </ol>
+  </section>
+
+  <section aria-labelledby="pub-h">
+    <h2 id="pub-h">{{ t.published }} <span class="count">{{ published.size }}</span></h2>
+    <ol class="pubs" reversed>
+      {%- for p in published %}{% include pub-item.html pub=p lang=L %}{% endfor %}
+    </ol>
+  </section>
+</div>

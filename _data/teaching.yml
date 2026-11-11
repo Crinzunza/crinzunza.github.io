@@ -1,0 +1,18 @@
+- institution: "Universidad Católica de la Santísima Concepción, Chile"
+  years: "2024"
+  role: { en: "Part-time lecturer", es: "Docente part-time" }
+  courses:
+    - { en: "Algebra and Linear Algebra", es: "Álgebra y Álgebra Lineal" }
+    - { en: "Calculus", es: "Cálculo" }
+    - { en: "Multivariable Calculus", es: "Cálculo en Varias Variables" }
+
+- institution: "Universidad de Concepción, Chile"
+  years: "2013–2018"
+  role: { en: "Teaching assistant", es: "Ayudante" }
+  courses:
+    - { en: "Numerical Calculus", es: "Cálculo Numérico" }
+    - { en: "Numerical Methods", es: "Métodos Numéricos" }
+    - { en: "Linear Algebra", es: "Álgebra Lineal" }
+    - { en: "Calculus", es: "Cálculo" }
+    - { en: "Algebra and Trigonometry", es: "Álgebra y Trigonometría" }
+    - { en: "Introduction to University Mathematics", es: "Introducción a la Matemática Universitaria" }

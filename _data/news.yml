@@ -1,0 +1,36 @@
+# Newest first. `date` as YYYY-MM (or YYYY if the month is unknown).
+# `link` is optional; internal links start with /.
+
+- date: 2026-10
+  en: "New preprint on arXiv: mixed finite element methods for a heat-assisted model of sedimentation, with J. Careaga."
+  es: "Nuevo preprint en arXiv: métodos de elementos finitos mixtos para un modelo de sedimentación asistida por calor, con J. Careaga."
+  link: "https://arxiv.org/abs/2610.28903"
+
+- date: 2026-10
+  en: "New GIANuC² preprint: a locking-free mixed-primal formulation for the Biot–Brinkman–Forchheimer model."
+  es: "Nuevo preprint GIANuC²: una formulación primal-mixta libre de bloqueo para el modelo de Biot–Brinkman–Forchheimer."
+  link: "https://direcciones.ucsc.cl/content/uploads/sites/41/2026/10/camano-caucao-inzunza-3.pdf"
+
+- date: 2026
+  en: "Accepted in the Journal of Computational and Applied Mathematics: a priori and a posteriori error analysis for convective Brinkman–Forchheimer flows with variable porosity."
+  es: "Aceptado en Journal of Computational and Applied Mathematics: análisis de error a priori y a posteriori para flujos convectivos de Brinkman–Forchheimer con porosidad variable."
+  link: "/publications/"
+
+- date: 2026-04
+  en: "Started my Fondecyt Postdoctoral project No. 3260398 on numerical methods for nonlinear poroelasticity."
+  es: "Comencé mi proyecto Fondecyt de Postdoctorado N.º 3260398 sobre métodos numéricos para poroelasticidad no lineal."
+  link: "/fondecyt/"
+
+- date: 2026-04
+  en: "Talk on the fully dynamic Biot–Brinkman model at the XXXVIII Jornada de Matemática de la Zona Sur, Universidad del Bío-Bío."
+  es: "Charla sobre el modelo de Biot–Brinkman totalmente dinámico en la XXXVIII Jornada de Matemática de la Zona Sur, Universidad del Bío-Bío."
+  link: "/talks/"
+
+- date: 2025-04
+  en: "Joined the Center for Mathematical Modeling (CMM), Universidad de Chile, as a postdoctoral researcher."
+  es: "Me incorporé al Centro de Modelamiento Matemático (CMM), Universidad de Chile, como investigador postdoctoral."
+
+- date: 2025
+  en: "Published in IMA Journal of Numerical Analysis: Banach spaces-based mixed methods for the coupled poroelasticity and heat equations."
+  es: "Publicado en IMA Journal of Numerical Analysis: métodos mixtos en espacios de Banach para las ecuaciones acopladas de poroelasticidad y calor."
+  link: "https://doi.org/10.1093/imanum/drae052"
