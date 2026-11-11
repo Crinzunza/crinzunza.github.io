@@ -41,7 +41,13 @@ Put the image in `assets/img/` and add `image: /assets/img/name.png` to the rese
 
 ### Figures
 
-The mesh drawings (`_includes/hero-mesh.svg`, `_includes/thumb-*.svg`) were generated with a Delaunay triangulation script (NumPy + SciPy). Their colours come from CSS variables, so they follow light and dark mode.
+The mesh figures in `_includes/*.svg` reproduce numerical examples from the CI²MA preprints:
+
+- `hero-mesh.svg`, `thumb-flow.svg`, `thumb-adapt.svg`: channel with a cavity and low-porosity regions (Example 4, pp26-12), recomputed with `scripts/channel.py` (scikit-fem, Taylor–Hood, adaptive refinement).
+- `thumb-poro.svg`: manufactured solution of Example 1, pp24-02.
+- `thumb-transport.svg`: initial data of Example 3, pp22-16.
+
+To regenerate them: `pip install scikit-fem matplotlib`, then `python3 scripts/channel.py && python3 scripts/figures.py` from the repository root. Colours come from CSS variables, so the figures follow light and dark mode.
 
 ## Local preview
 

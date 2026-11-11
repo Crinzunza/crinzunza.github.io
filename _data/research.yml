@@ -13,7 +13,7 @@
       and are designed to remain stable in the nearly incompressible limit, where
       standard discretisations suffer from locking. Applications include deformable
       porous media in engineering and fluid flow in biological tissues.
-    caption: "A loaded poroelastic block: deformed mesh coloured by the fluid pressure."
+    caption: "Manufactured solution of Example 1 in Careaga, Gatica, Inzunza and Ruiz-Baier (IMA J. Numer. Anal., 2025): fluid pressure on the deformed configuration, with the undeformed domain dashed."
   es:
     title: "Poroelasticidad y acoplamientos multifísicos"
     short: "El modelo de consolidación de Biot acoplado con transferencia de calor, transporte electroquímico e inercia del fluido."
@@ -25,7 +25,7 @@
       en el límite casi incompresible, donde las discretizaciones estándar sufren
       bloqueo (locking). Las aplicaciones incluyen medios porosos deformables en
       ingeniería y el flujo de fluidos en tejidos biológicos.
-    caption: "Un bloque poroelástico cargado: malla deformada coloreada por la presión del fluido."
+    caption: "Solución manufacturada del Ejemplo 1 de Careaga, Gatica, Inzunza y Ruiz-Baier (IMA J. Numer. Anal., 2025): presión del fluido sobre la configuración deformada, con el dominio sin deformar en línea discontinua."
 
 - id: flow
   figure: thumb-flow.svg
@@ -38,7 +38,7 @@
       and nearly incompressible elasticity. The analysis relies on Banach-space
       formulations in which the natural integrability of the nonlinear terms
       determines the functional setting.
-    caption: "Flow past a circular inclusion: mesh coloured by the velocity magnitude."
+    caption: "Velocity magnitude near the cavity in the channel of Example 4 in Caucao, Gatica, Gatica and Inzunza (J. Comput. Appl. Math., 2027), on the finest adapted mesh, recomputed for this page. The flow accelerates above the cavity and bends away from the low-porosity region."
   es:
     title: "Flujo en medios porosos y fluidos incompresibles"
     short: "Métodos mixtos para flujos de Stokes, Navier–Stokes, Brinkman y Brinkman–Forchheimer."
@@ -48,7 +48,7 @@
       porosidad variable y elasticidad casi incompresible. El análisis se apoya en
       formulaciones en espacios de Banach, donde la integrabilidad natural de los
       términos no lineales determina el marco funcional.
-    caption: "Flujo alrededor de una inclusión circular: malla coloreada por la magnitud de la velocidad."
+    caption: "Magnitud de la velocidad cerca de la cavidad en el canal del Ejemplo 4 de Caucao, Gatica, Gatica e Inzunza (J. Comput. Appl. Math., 2027), en la malla adaptada más fina, recalculada para esta página. El flujo se acelera sobre la cavidad y se desvía de la región de baja porosidad."
 
 - id: transport
   figure: thumb-transport.svg
@@ -61,7 +61,7 @@
       chemotaxis–Navier–Stokes, Boussinesq-type models, flow–transport systems and
       heat-assisted sedimentation. Well-posedness is typically obtained through
       fixed-point arguments combined with the theory of mixed and monotone problems.
-    caption: "A concentration plume transported downstream."
+    caption: "Initial cell density of Example 3 in Caucao, Colmenares, Gatica and Inzunza (Comput. Math. Appl., 2023): three clusters near the top of the domain, with level lines of the chemical signal."
   es:
     title: "Transporte, difusión y su acoplamiento con la mecánica"
     short: "Difusión asistida por tensiones, interacción quimiotaxis–fluido, flujos de Boussinesq y sedimentación."
@@ -72,7 +72,7 @@
       flujo–transporte y sedimentación asistida por calor. El buen planteamiento se
       obtiene usualmente mediante argumentos de punto fijo combinados con la teoría
       de problemas mixtos y monótonos.
-    caption: "Una pluma de concentración transportada aguas abajo."
+    caption: "Densidad celular inicial del Ejemplo 3 de Caucao, Colmenares, Gatica e Inzunza (Comput. Math. Appl., 2023): tres cúmulos cerca del borde superior, con curvas de nivel de la señal química."
 
 - id: apost
   figure: thumb-adapt.svg
@@ -83,7 +83,7 @@
       Residual-based a posteriori error estimators for fully-mixed and mixed-primal
       methods, with proofs of reliability and efficiency, and their use to drive
       adaptive mesh refinement in problems with singularities or sharp layers.
-    caption: "Adaptive refinement towards the re-entrant corner of an L-shaped domain."
+    caption: "Porosity of the same channel on the finest mesh of the adaptive sequence. The refinement follows the cavity corners and the two low-porosity regions."
   es:
     title: "Análisis de error a posteriori y adaptatividad"
     short: "Estimadores residuales confiables y eficientes para métodos mixtos en espacios de Banach."
@@ -92,4 +92,4 @@
       mixtos y primal-mixtos, con demostraciones de confiabilidad y eficiencia, y su
       uso para guiar el refinamiento adaptativo de mallas en problemas con
       singularidades o capas abruptas.
-    caption: "Refinamiento adaptativo hacia la esquina reentrante de un dominio en forma de L."
+    caption: "Porosidad del mismo canal en la malla más fina de la secuencia adaptativa. El refinamiento sigue las esquinas de la cavidad y las dos regiones de baja porosidad."
