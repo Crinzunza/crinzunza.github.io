@@ -54,6 +54,7 @@
   year: 2026
   status: published
   topics: [poro, flow]
+  doi: "10.1051/m2an/2026094"
   preprint: "https://ci2ma.udec.cl/publicaciones/prepublicaciones/prepublicacion.php?id=601"
 
 - title: "Primal-mixed finite element methods for the coupled Biot and Poisson–Nernst–Planck equations"
