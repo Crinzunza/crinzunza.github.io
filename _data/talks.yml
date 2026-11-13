@@ -1,4 +1,14 @@
 # Newest first. `title` is written in the language the talk was given.
+- date: 2026-10
+  title: "A pseudostress-based fully mixed formulation for the unsteady Biot–Brinkman model"
+  event: "XXXIV Congreso de Matemáticas Capricornio (COMCA 2026)"
+  place: "Universidad de La Serena, Chile"
+
+- date: 2026-10
+  title: "A five-field mixed formulation for the fully dynamic Biot–Brinkman model"
+  event: "Seminario Caleta Numérica, Instituto de Matemáticas"
+  place: "Pontificia Universidad Católica de Valparaíso, Chile"
+
 - date: 2026-04
   title: "A five-field mixed formulation for the fully dynamic Biot–Brinkman model"
   event: "XXXVIII Jornada de Matemática de la Zona Sur"
